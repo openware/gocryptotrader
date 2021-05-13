@@ -16,8 +16,8 @@ import (
 	"github.com/google/go-querystring/query"
 	"github.com/thrasher-corp/gocryptotrader/common/crypto"
 	exchange "github.com/openware/irix"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/request"
 	"github.com/thrasher-corp/gocryptotrader/log"
 )
 

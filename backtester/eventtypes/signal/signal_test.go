@@ -3,7 +3,7 @@ package signal
 import (
 	"testing"
 
-	gctorder "github.com/openware/irix/order"
+	gctorder "github.com/openware/pkg/order"
 )
 
 func TestIsSignal(t *testing.T) {

@@ -38,8 +38,8 @@ import (
 	gctdatabase "github.com/thrasher-corp/gocryptotrader/database"
 	"github.com/thrasher-corp/gocryptotrader/engine"
 	gctexchange "github.com/openware/irix"
-	"github.com/openware/irix/asset"
-	gctkline "github.com/openware/irix/kline"
+	"github.com/openware/pkg/asset"
+	gctkline "github.com/openware/pkg/kline"
 	"github.com/thrasher-corp/gocryptotrader/log"
 )
 

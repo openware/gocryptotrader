@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 var (

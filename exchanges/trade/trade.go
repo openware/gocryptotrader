@@ -13,9 +13,9 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/currency"
 	"github.com/thrasher-corp/gocryptotrader/database"
 	tradesql "github.com/thrasher-corp/gocryptotrader/database/repository/trade"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/kline"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/kline"
+	"github.com/openware/pkg/order"
 	"github.com/thrasher-corp/gocryptotrader/log"
 )
 

@@ -6,8 +6,8 @@ import (
 
 	"github.com/gorilla/websocket"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/order"
 )
 
 // Connection defines a streaming services connection

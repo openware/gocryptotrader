@@ -7,7 +7,7 @@ import (
 
 	"github.com/shopspring/decimal"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 )
 
 var (

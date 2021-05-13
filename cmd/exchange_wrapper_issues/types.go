@@ -5,7 +5,7 @@ import (
 
 	"github.com/thrasher-corp/gocryptotrader/config"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 )
 
 // variables for command line overrides

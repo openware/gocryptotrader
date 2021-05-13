@@ -2,7 +2,7 @@ package exchangeratehost
 
 import (
 	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/request"
 )
 
 // ExchangeRateHost stores the struct for the exchangerate.host API

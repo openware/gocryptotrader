@@ -3,7 +3,7 @@ package fill
 import (
 	"testing"
 
-	gctorder "github.com/openware/irix/order"
+	gctorder "github.com/openware/pkg/order"
 )
 
 func TestSetDirection(t *testing.T) {

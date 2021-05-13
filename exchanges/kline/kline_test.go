@@ -17,8 +17,8 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/database/repository/candle"
 	"github.com/thrasher-corp/gocryptotrader/database/repository/exchange"
 	"github.com/thrasher-corp/gocryptotrader/database/testhelpers"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/order"
 )
 
 var (

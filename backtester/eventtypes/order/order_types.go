@@ -3,7 +3,7 @@ package order
 import (
 	"github.com/thrasher-corp/gocryptotrader/backtester/common"
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/event"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 // Order contains all details for an order event

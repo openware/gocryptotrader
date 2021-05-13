@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/request"
 )
 
 // const declarations consist of endpoints

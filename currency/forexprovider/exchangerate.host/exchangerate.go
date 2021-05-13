@@ -10,7 +10,7 @@ import (
 
 	"github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/request"
 )
 
 // A client for the exchangerate.host API. NOTE: The format and callback

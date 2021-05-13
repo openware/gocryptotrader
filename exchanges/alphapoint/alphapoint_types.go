@@ -1,7 +1,7 @@
 package alphapoint
 
 import (
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 // Response contains general responses from the exchange

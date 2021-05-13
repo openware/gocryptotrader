@@ -4,8 +4,8 @@ import (
 	"time"
 
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/kline"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/kline"
 )
 
 // Base is the underlying event across all actions that occur for the backtester

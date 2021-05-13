@@ -10,7 +10,7 @@ import (
 
 	"github.com/gofrs/uuid"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 )
 
 var id, _ = uuid.NewV4()

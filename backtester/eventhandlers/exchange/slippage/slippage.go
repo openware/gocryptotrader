@@ -3,8 +3,8 @@ package slippage
 import (
 	"math/rand"
 
-	gctorder "github.com/openware/irix/order"
-	"github.com/openware/irix/orderbook"
+	gctorder "github.com/openware/pkg/order"
+	"github.com/openware/pkg/orderbook"
 )
 
 // EstimateSlippagePercentage takes in an int range of numbers

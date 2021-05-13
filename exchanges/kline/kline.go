@@ -10,8 +10,8 @@ import (
 
 	"github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/order"
 )
 
 // CreateKline creates candles out of trade history data for a set time interval

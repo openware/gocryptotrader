@@ -8,9 +8,9 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/backtester/common"
 	"github.com/thrasher-corp/gocryptotrader/backtester/data/kline"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	gctkline "github.com/openware/irix/kline"
-	"github.com/openware/irix/trade"
+	"github.com/openware/pkg/asset"
+	gctkline "github.com/openware/pkg/kline"
+	"github.com/openware/pkg/trade"
 )
 
 // LoadData retrieves data from an existing database using GoCryptoTrader's database handling implementation

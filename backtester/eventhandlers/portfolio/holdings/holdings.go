@@ -3,7 +3,7 @@ package holdings
 import (
 	"github.com/thrasher-corp/gocryptotrader/backtester/common"
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/fill"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 // Create takes a fill event and creates a new holding for the exchange, asset, pair

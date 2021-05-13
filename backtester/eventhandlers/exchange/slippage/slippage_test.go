@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 	"github.com/openware/irix/bitstamp"
-	gctorder "github.com/openware/irix/order"
+	gctorder "github.com/openware/pkg/order"
 )
 
 func TestRandomSlippage(t *testing.T) {

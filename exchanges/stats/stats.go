@@ -5,7 +5,7 @@ import (
 	"sort"
 
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 )
 
 // Item holds various fields for storing currency pair stats

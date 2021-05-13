@@ -11,7 +11,7 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/common/crypto"
 	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 )
 
 // Vars for the websocket client

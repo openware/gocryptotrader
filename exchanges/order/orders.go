@@ -9,7 +9,7 @@ import (
 
 	"github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/validate"
+	"github.com/openware/pkg/validate"
 )
 
 // Validate checks the supplied data and returns whether or not it's valid

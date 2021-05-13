@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	exchange "github.com/openware/irix"
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 )
 
 var (

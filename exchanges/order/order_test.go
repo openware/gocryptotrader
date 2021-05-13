@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/validate"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/validate"
 )
 
 var errValidationCheckFailed = errors.New("validation check failed")

@@ -11,11 +11,11 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/order"
-	"github.com/openware/irix/orderbook"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/order"
+	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/stream"
-	"github.com/openware/irix/trade"
+	"github.com/openware/pkg/trade"
 	"github.com/thrasher-corp/gocryptotrader/log"
 )
 

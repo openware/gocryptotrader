@@ -13,8 +13,8 @@ import (
 	eventkline "github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/kline"
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/signal"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	gctkline "github.com/openware/irix/kline"
+	"github.com/openware/pkg/asset"
+	gctkline "github.com/openware/pkg/kline"
 )
 
 func TestName(t *testing.T) {

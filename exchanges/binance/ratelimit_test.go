@@ -3,7 +3,7 @@ package binance
 import (
 	"testing"
 
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/request"
 )
 
 func TestRateLimit_Limit(t *testing.T) {

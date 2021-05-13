@@ -2,7 +2,7 @@ package openexchangerates
 
 import (
 	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/request"
 )
 
 // These consts contain endpoint information

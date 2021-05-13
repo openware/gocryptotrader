@@ -3,7 +3,7 @@ package currency
 import (
 	"sync"
 
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 )
 
 // PairsManager manages asset pairs

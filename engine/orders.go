@@ -12,8 +12,8 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/communications/base"
 	"github.com/thrasher-corp/gocryptotrader/currency"
 	"github.com/thrasher-corp/gocryptotrader/engine/subsystem"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/order"
 	"github.com/thrasher-corp/gocryptotrader/log"
 )
 

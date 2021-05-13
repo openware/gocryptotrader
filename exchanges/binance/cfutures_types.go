@@ -3,7 +3,7 @@ package binance
 import (
 	"time"
 
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 // Response holds basic binance api response data

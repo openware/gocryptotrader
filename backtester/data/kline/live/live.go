@@ -8,9 +8,9 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/backtester/common"
 	"github.com/thrasher-corp/gocryptotrader/currency"
 	exchange "github.com/openware/irix"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/kline"
-	"github.com/openware/irix/trade"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/kline"
+	"github.com/openware/pkg/trade"
 )
 
 // LoadData retrieves data from a GoCryptoTrader exchange wrapper which calls the exchange's API for the latest interval

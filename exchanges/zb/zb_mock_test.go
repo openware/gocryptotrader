@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/openware/irix/mock"
+	"github.com/openware/pkg/mock"
 	"github.com/openware/irix/sharedtestvalues"
 )
 

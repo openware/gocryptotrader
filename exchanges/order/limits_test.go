@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 )
 
 var btcusd = currency.NewPair(currency.BTC, currency.USD)

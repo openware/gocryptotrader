@@ -14,9 +14,9 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/statistics"
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/statistics/currencystatistics"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	gctkline "github.com/openware/irix/kline"
-	gctorder "github.com/openware/irix/order"
+	"github.com/openware/pkg/asset"
+	gctkline "github.com/openware/pkg/kline"
+	gctorder "github.com/openware/pkg/order"
 )
 
 const testExchange = "binance"

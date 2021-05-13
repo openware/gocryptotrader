@@ -17,8 +17,8 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/common/crypto"
 	"github.com/thrasher-corp/gocryptotrader/currency"
 	exchange "github.com/openware/irix"
-	"github.com/openware/irix/order"
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/order"
+	"github.com/openware/pkg/request"
 )
 
 // FTX is the overarching type across this package

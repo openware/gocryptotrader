@@ -10,8 +10,8 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/statistics/currencystatistics"
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/fill"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	gctorder "github.com/openware/irix/order"
+	"github.com/openware/pkg/asset"
+	gctorder "github.com/openware/pkg/order"
 )
 
 var (

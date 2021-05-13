@@ -13,8 +13,8 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/currency"
 	"github.com/thrasher-corp/gocryptotrader/database"
 	"github.com/thrasher-corp/gocryptotrader/database/drivers"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/kline"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/kline"
 )
 
 const (

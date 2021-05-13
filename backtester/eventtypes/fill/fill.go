@@ -1,7 +1,7 @@
 package fill
 
 import (
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 // SetDirection sets the direction

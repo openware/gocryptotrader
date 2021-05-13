@@ -17,8 +17,8 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/order"
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/signal"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	gctorder "github.com/openware/irix/order"
+	"github.com/openware/pkg/asset"
+	gctorder "github.com/openware/pkg/order"
 	"github.com/thrasher-corp/gocryptotrader/log"
 )
 

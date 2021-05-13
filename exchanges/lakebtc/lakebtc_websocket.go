@@ -10,8 +10,8 @@ import (
 
 	"github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/orderbook"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/stream"
 	"github.com/openware/irix/ticker"
 	"github.com/thrasher-corp/gocryptotrader/log"

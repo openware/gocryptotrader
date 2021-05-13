@@ -9,9 +9,9 @@ import (
 	gctcommon "github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/common/math"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	gctkline "github.com/openware/irix/kline"
-	gctorder "github.com/openware/irix/order"
+	"github.com/openware/pkg/asset"
+	gctkline "github.com/openware/pkg/kline"
+	gctorder "github.com/openware/pkg/order"
 	"github.com/thrasher-corp/gocryptotrader/log"
 )
 

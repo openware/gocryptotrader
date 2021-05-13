@@ -11,8 +11,8 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/event"
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/kline"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	gctkline "github.com/openware/irix/kline"
+	"github.com/openware/pkg/asset"
+	gctkline "github.com/openware/pkg/kline"
 )
 
 func TestGetBase(t *testing.T) {

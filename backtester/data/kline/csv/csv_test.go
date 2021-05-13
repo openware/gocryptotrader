@@ -7,8 +7,8 @@ import (
 
 	"github.com/thrasher-corp/gocryptotrader/backtester/common"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/asset"
-	gctkline "github.com/openware/irix/kline"
+	"github.com/openware/pkg/asset"
+	gctkline "github.com/openware/pkg/kline"
 )
 
 const testExchange = "binance"

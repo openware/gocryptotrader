@@ -3,7 +3,7 @@ package coinmarketcap
 import (
 	"time"
 
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/request"
 )
 
 // Coinmarketcap account plan bitmasks, url and enpoint consts

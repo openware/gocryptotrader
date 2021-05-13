@@ -3,7 +3,7 @@ package currency
 import (
 	"testing"
 
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 )
 
 var p PairsManager

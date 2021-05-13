@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/request"
 )
 
 func TestLinearBackoff(t *testing.T) {

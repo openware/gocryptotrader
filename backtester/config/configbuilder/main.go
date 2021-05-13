@@ -21,8 +21,8 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/database"
 	dbPSQL "github.com/thrasher-corp/gocryptotrader/database/drivers/postgres"
 	dbsqlite3 "github.com/thrasher-corp/gocryptotrader/database/drivers/sqlite3"
-	"github.com/openware/irix/asset"
-	gctkline "github.com/openware/irix/kline"
+	"github.com/openware/pkg/asset"
+	gctkline "github.com/openware/pkg/kline"
 )
 
 const (

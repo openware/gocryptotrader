@@ -12,7 +12,7 @@ import (
 
 	"github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/request"
 	"github.com/thrasher-corp/gocryptotrader/log"
 )
 

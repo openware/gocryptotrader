@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/thrasher-corp/gocryptotrader/common/timedmutex"
-	"github.com/openware/irix/nonce"
+	"github.com/openware/pkg/nonce"
 )
 
 // Const vars for rate limiter

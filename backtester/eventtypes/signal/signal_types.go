@@ -3,7 +3,7 @@ package signal
 import (
 	"github.com/thrasher-corp/gocryptotrader/backtester/common"
 	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/event"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 // Event handler is used for getting trade signal details

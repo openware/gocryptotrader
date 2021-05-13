@@ -18,9 +18,9 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/common/file"
 	"github.com/thrasher-corp/gocryptotrader/config"
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/account"
-	"github.com/openware/irix/asset"
-	"github.com/openware/irix/orderbook"
+	"github.com/openware/pkg/account"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/stats"
 	"github.com/openware/irix/ticker"
 )

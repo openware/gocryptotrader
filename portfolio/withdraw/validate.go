@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/validate"
+	"github.com/openware/pkg/validate"
 	"github.com/thrasher-corp/gocryptotrader/portfolio"
 )
 

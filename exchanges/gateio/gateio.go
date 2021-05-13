@@ -13,8 +13,8 @@ import (
 	"github.com/thrasher-corp/gocryptotrader/common/crypto"
 	"github.com/thrasher-corp/gocryptotrader/currency"
 	exchange "github.com/openware/irix"
-	"github.com/openware/irix/kline"
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/kline"
+	"github.com/openware/pkg/request"
 	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
 )
 

@@ -3,7 +3,7 @@ package bitfinex
 import (
 	"time"
 
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 // AccountV2Data stores account v2 data

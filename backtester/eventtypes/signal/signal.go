@@ -2,7 +2,7 @@ package signal
 
 import (
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 // IsSignal returns whether the event is a signal type

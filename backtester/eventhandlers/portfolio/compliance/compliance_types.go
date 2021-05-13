@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 var (

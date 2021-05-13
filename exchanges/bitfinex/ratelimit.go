@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/openware/irix/request"
+	"github.com/openware/pkg/request"
 	"golang.org/x/time/rate"
 )
 

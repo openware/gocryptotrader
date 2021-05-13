@@ -3,7 +3,7 @@ package kraken
 import (
 	"sync"
 
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 var (

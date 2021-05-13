@@ -7,7 +7,7 @@ import (
 	"time"
 
 	objects "github.com/d5/tengo/v2"
-	"github.com/openware/irix/asset"
+	"github.com/openware/pkg/asset"
 	"github.com/thrasher-corp/gocryptotrader/gctscript/modules/ta/indicators"
 )
 

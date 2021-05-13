@@ -2,7 +2,7 @@ package order
 
 import (
 	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/openware/irix/order"
+	"github.com/openware/pkg/order"
 )
 
 // IsOrder returns whether the event is an order event
