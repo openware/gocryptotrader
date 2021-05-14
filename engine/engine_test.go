@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/config"
+	"github.com/openware/irix/config"
 )
 
 func TestLoadConfigWithSettings(t *testing.T) {

@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/gofrs/uuid"
-	"github.com/thrasher-corp/gocryptotrader/common/convert"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/common/convert"
+	"github.com/openware/gocryptotrader/log"
 )
 
 const (

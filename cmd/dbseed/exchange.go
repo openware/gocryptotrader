@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	exchangeDB "github.com/thrasher-corp/gocryptotrader/database/repository/exchange"
+	exchangeDB "github.com/openware/gocryptotrader/database/repository/exchange"
 	exchange "github.com/openware/irix"
 	"github.com/urfave/cli/v2"
 )

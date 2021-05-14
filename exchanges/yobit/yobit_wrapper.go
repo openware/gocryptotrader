@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/irix/config"
+	"github.com/openware/pkg/currency"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/account"
 	"github.com/openware/pkg/asset"
@@ -22,8 +22,8 @@ import (
 	"github.com/openware/pkg/request"
 	"github.com/openware/irix/ticker"
 	"github.com/openware/pkg/trade"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 )
 
 // GetDefaultConfig returns a default exchange config

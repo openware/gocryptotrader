@@ -1,13 +1,13 @@
 # GoCryptoTrader package Documentation
 
-<img src="https://github.com/thrasher-corp/gocryptotrader/blob/master/web/src/assets/page-logo.png?raw=true" width="350px" height="350px" hspace="70">
+<img src="https://github.com/openware/gocryptotrader/blob/master/web/src/assets/page-logo.png?raw=true" width="350px" height="350px" hspace="70">
 
 
-[![Build Status](https://github.com/thrasher-corp/gocryptotrader/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/thrasher-corp/gocryptotrader/actions/workflows/tests.yml)
-[![Software License](https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square)](https://github.com/thrasher-corp/gocryptotrader/blob/master/LICENSE)
-[![GoDoc](https://godoc.org/github.com/thrasher-corp/gocryptotrader?status.svg)](https://godoc.org/github.com/thrasher-corp/gocryptotrader/cmd/documentation)
-[![Coverage Status](http://codecov.io/github/thrasher-corp/gocryptotrader/coverage.svg?branch=master)](http://codecov.io/github/thrasher-corp/gocryptotrader?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/thrasher-corp/gocryptotrader)](https://goreportcard.com/report/github.com/thrasher-corp/gocryptotrader)
+[![Build Status](https://github.com/openware/gocryptotrader/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/openware/gocryptotrader/actions/workflows/tests.yml)
+[![Software License](https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square)](https://github.com/openware/gocryptotrader/blob/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/openware/gocryptotrader?status.svg)](https://godoc.org/github.com/openware/gocryptotrader/cmd/documentation)
+[![Coverage Status](http://codecov.io/github/openware/gocryptotrader/coverage.svg?branch=master)](http://codecov.io/github/openware/gocryptotrader?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/openware/gocryptotrader)](https://goreportcard.com/report/github.com/openware/gocryptotrader)
 
 
 This documentation package is part of the GoCryptoTrader codebase.
@@ -36,7 +36,7 @@ Be aware, this tool will:
 
 ```json
 {
- "githubRepo": "https://api.github.com/repos/thrasher-corp/gocryptotrader", This is your current repo
+ "githubRepo": "https://api.github.com/repos/openware/gocryptotrader", This is your current repo
  "exclusionList": { This allows for excluded directories and files
   "Files": null,
   "Directories": [
@@ -62,7 +62,7 @@ Be aware, this tool will:
 #### A concise blurb about the package or tool system
 
 + Coding examples
-import "github.com/thrasher-corp/gocryptotrader/something"
+import "github.com/openware/gocryptotrader/something"
 testString := "aAaAa"
 upper := strings.ToUpper(testString)
 // upper == "AAAAA"
@@ -85,12 +85,12 @@ When submitting a PR, please abide by our coding guidelines:
 
 + Code must adhere to the official Go [formatting](https://golang.org/doc/effective_go.html#formatting) guidelines (i.e. uses [gofmt](https://golang.org/cmd/gofmt/)).
 + Code must be documented adhering to the official Go [commentary](https://golang.org/doc/effective_go.html#commentary) guidelines.
-+ Code must adhere to our [coding style](https://github.com/thrasher-corp/gocryptotrader/blob/master/doc/coding_style.md).
++ Code must adhere to our [coding style](https://github.com/openware/gocryptotrader/blob/master/doc/coding_style.md).
 + Pull requests need to be based on and opened against the `master` branch.
 
 ## Donations
 
-<img src="https://github.com/thrasher-corp/gocryptotrader/blob/master/web/src/assets/donate.png?raw=true" hspace="70">
+<img src="https://github.com/openware/gocryptotrader/blob/master/web/src/assets/donate.png?raw=true" hspace="70">
 
 If this framework helped you in any way, or you would like to support the developers working on it, please donate Bitcoin to:
 

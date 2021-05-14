@@ -18,18 +18,18 @@ import (
 	"time"
 
 	"github.com/pquerna/otp/totp"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common/file"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/dispatch"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/account"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/stats"
 	"github.com/openware/irix/ticker"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
+	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/portfolio"
 )
 
 var (

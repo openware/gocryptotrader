@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/connchecker"
-	"github.com/thrasher-corp/gocryptotrader/engine/subsystem"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/connchecker"
+	"github.com/openware/gocryptotrader/engine/subsystem"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // connectionManager manages the connchecker

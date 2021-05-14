@@ -1,9 +1,9 @@
 package strategies
 
 import (
-	"github.com/thrasher-corp/gocryptotrader/backtester/data"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/signal"
+	"github.com/openware/gocryptotrader/backtester/data"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/signal"
 )
 
 // Handler defines all functions required to run strategies against data events

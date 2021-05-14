@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/thrasher-corp/gocryptotrader/database"
+	"github.com/openware/gocryptotrader/database"
 )
 
 // GetSQLDialect returns current SQL Dialect based on enabled driver

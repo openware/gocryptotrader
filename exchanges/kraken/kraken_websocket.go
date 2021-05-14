@@ -12,9 +12,9 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/convert"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common/convert"
+	"github.com/openware/pkg/currency"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/order"
@@ -23,7 +23,7 @@ import (
 	"github.com/openware/irix/stream/buffer"
 	"github.com/openware/irix/ticker"
 	"github.com/openware/pkg/trade"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // List of all websocket channels to subscribe to

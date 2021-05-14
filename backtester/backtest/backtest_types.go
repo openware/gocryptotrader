@@ -3,14 +3,14 @@ package backtest
 import (
 	"errors"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/data"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/eventholder"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/exchange"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/statistics"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/strategies"
-	"github.com/thrasher-corp/gocryptotrader/backtester/report"
-	"github.com/thrasher-corp/gocryptotrader/engine"
+	"github.com/openware/gocryptotrader/backtester/data"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/eventholder"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/exchange"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/statistics"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/strategies"
+	"github.com/openware/gocryptotrader/backtester/report"
+	"github.com/openware/gocryptotrader/engine"
 )
 
 var (

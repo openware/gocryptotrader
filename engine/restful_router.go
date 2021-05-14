@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // RESTLogger logs the requests internally
@@ -113,6 +113,6 @@ func newRouter(bot *Engine, isREST bool) *mux.Router {
 }
 
 func getIndex(w http.ResponseWriter, _ *http.Request) {
-	fmt.Fprint(w, "<html>GoCryptoTrader RESTful interface. For the web GUI, please visit the <a href=https://github.com/thrasher-corp/gocryptotrader/blob/master/web/README.md>web GUI readme.</a></html>")
+	fmt.Fprint(w, "<html>GoCryptoTrader RESTful interface. For the web GUI, please visit the <a href=https://github.com/openware/gocryptotrader/blob/master/web/README.md>web GUI readme.</a></html>")
 	w.WriteHeader(http.StatusOK)
 }

@@ -3,7 +3,7 @@ package currency
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency/coinmarketcap"
+	"github.com/openware/pkg/currency/coinmarketcap"
 )
 
 // MainConfiguration is the main configuration from the config.json file

@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/pkg/currency/forexprovider/base"
 	"github.com/openware/pkg/request"
 )
 

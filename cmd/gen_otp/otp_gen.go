@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/pquerna/otp/totp"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/core"
+	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/core"
 )
 
 const defaultSleepTime = time.Second * 30

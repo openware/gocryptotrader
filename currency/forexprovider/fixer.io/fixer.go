@@ -16,10 +16,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/pkg/currency/forexprovider/base"
 	"github.com/openware/pkg/request"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // Setup sets appropriate values for fixer object

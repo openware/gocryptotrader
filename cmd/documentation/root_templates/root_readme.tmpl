@@ -1,11 +1,11 @@
 {{define "root" -}}
-<img src="https://github.com/thrasher-corp/gocryptotrader/blob/master/web/src/assets/page-logo.png?raw=true" width="350px" height="350px" hspace="70">
+<img src="https://github.com/openware/gocryptotrader/blob/master/web/src/assets/page-logo.png?raw=true" width="350px" height="350px" hspace="70">
 
-[![Build Status](https://github.com/thrasher-corp/gocryptotrader/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/thrasher-corp/gocryptotrader/actions/workflows/tests.yml)
-[![Software License](https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square)](https://github.com/thrasher-corp/gocryptotrader/blob/master/LICENSE)
-[![GoDoc](https://godoc.org/github.com/thrasher-corp/gocryptotrader?status.svg)](https://godoc.org/github.com/thrasher-corp/gocryptotrader)
-[![Coverage Status](http://codecov.io/github/thrasher-corp/gocryptotrader/coverage.svg?branch=master)](http://codecov.io/github/thrasher-corp/gocryptotrader?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/thrasher-corp/gocryptotrader)](https://goreportcard.com/report/github.com/thrasher-corp/gocryptotrader)
+[![Build Status](https://github.com/openware/gocryptotrader/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/openware/gocryptotrader/actions/workflows/tests.yml)
+[![Software License](https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square)](https://github.com/openware/gocryptotrader/blob/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/openware/gocryptotrader?status.svg)](https://godoc.org/github.com/openware/gocryptotrader)
+[![Coverage Status](http://codecov.io/github/openware/gocryptotrader/coverage.svg?branch=master)](http://codecov.io/github/openware/gocryptotrader?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/openware/gocryptotrader)](https://goreportcard.com/report/github.com/openware/gocryptotrader)
 
 A cryptocurrency trading bot supporting multiple exchanges written in Golang.
 
@@ -93,7 +93,7 @@ When submitting a PR, please abide by our coding guidelines:
 
 + Code must adhere to the official Go [formatting](https://golang.org/doc/effective_go.html#formatting) guidelines (i.e. uses [gofmt](https://golang.org/cmd/gofmt/)).
 + Code must be documented adhering to the official Go [commentary](https://golang.org/doc/effective_go.html#commentary) guidelines.
-+ Code must adhere to our [coding style](https://github.com/thrasher-corp/gocryptotrader/blob/master/.github/CONTRIBUTING.md).
++ Code must adhere to our [coding style](https://github.com/openware/gocryptotrader/blob/master/.github/CONTRIBUTING.md).
 + Pull requests need to be based on and opened against the `master` branch.
 
 ## Compiling instructions
@@ -107,17 +107,17 @@ GoCryptoTrader is built using [Go Modules](https://github.com/golang/go/wiki/Mod
 Using Go Modules you now clone this repository **outside** your GOPATH
 
 ```bash
-git clone https://github.com/thrasher-corp/gocryptotrader.git
+git clone https://github.com/openware/gocryptotrader.git
 cd gocryptotrader
 go build
 mkdir ~/.gocryptotrader
-cp config_example.json ~/.gocryptotrader/config.json
+cp config_example.json ~/.irix/config.json
 ```
 
 ### Windows
 
 ```bash
-git clone https://github.com/thrasher-corp/gocryptotrader.git
+git clone https://github.com/openware/gocryptotrader.git
 cd gocryptotrader
 go build
 copy config_example.json %APPDATA%\GoCryptoTrader\config.json

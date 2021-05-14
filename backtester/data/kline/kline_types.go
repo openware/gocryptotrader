@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/data"
+	"github.com/openware/gocryptotrader/backtester/data"
 	gctkline "github.com/openware/pkg/kline"
 )
 

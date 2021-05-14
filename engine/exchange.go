@@ -5,9 +5,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/irix/config"
+	"github.com/openware/pkg/currency"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/irix/binance"
@@ -38,7 +38,7 @@ import (
 	"github.com/openware/irix/poloniex"
 	"github.com/openware/irix/yobit"
 	"github.com/openware/irix/zb"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // vars related to exchange functions

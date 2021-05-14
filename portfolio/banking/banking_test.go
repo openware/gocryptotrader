@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/pkg/currency"
 )
 
 var (

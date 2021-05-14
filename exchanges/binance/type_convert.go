@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common/convert"
+	"github.com/openware/gocryptotrader/common/convert"
 )
 
 // binanceTime provides an internal conversion helper

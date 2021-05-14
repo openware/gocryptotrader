@@ -3,7 +3,7 @@ package lbank
 import (
 	"encoding/json"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/pkg/currency"
 )
 
 // Ticker stores the ticker price data for a currency pair

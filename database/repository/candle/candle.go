@@ -13,12 +13,12 @@ import (
 	"time"
 
 	"github.com/gofrs/uuid"
-	"github.com/thrasher-corp/gocryptotrader/database"
-	modelPSQL "github.com/thrasher-corp/gocryptotrader/database/models/postgres"
-	modelSQLite "github.com/thrasher-corp/gocryptotrader/database/models/sqlite3"
-	"github.com/thrasher-corp/gocryptotrader/database/repository"
-	"github.com/thrasher-corp/gocryptotrader/database/repository/exchange"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/database"
+	modelPSQL "github.com/openware/gocryptotrader/database/models/postgres"
+	modelSQLite "github.com/openware/gocryptotrader/database/models/sqlite3"
+	"github.com/openware/gocryptotrader/database/repository"
+	"github.com/openware/gocryptotrader/database/repository/exchange"
+	"github.com/openware/gocryptotrader/log"
 	"github.com/thrasher-corp/sqlboiler/boil"
 	"github.com/thrasher-corp/sqlboiler/queries/qm"
 )

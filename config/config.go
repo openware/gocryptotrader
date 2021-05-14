@@ -15,17 +15,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/convert"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/connchecker"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider"
-	"github.com/thrasher-corp/gocryptotrader/database"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common/convert"
+	"github.com/openware/gocryptotrader/common/file"
+	"github.com/openware/gocryptotrader/connchecker"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/currency/forexprovider"
+	"github.com/openware/gocryptotrader/database"
 	"github.com/openware/pkg/asset"
-	gctscript "github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
+	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
+	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/portfolio/banking"
 )
 
 // GetCurrencyConfig returns currency configurations
@@ -1429,7 +1429,7 @@ func (c *Config) CheckConnectionMonitorConfig() {
 }
 
 // DefaultFilePath returns the default config file path
-// MacOS/Linux: $HOME/.gocryptotrader/config.json or config.dat
+// MacOS/Linux: $HOME/.irix/config.json or config.dat
 // Windows: %APPDATA%\GoCryptoTrader\config.json or config.dat
 // Helpful for printing application usage
 func DefaultFilePath() string {

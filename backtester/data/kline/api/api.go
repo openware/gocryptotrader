@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/pkg/currency"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/kline"

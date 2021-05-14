@@ -7,15 +7,15 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/account"
 	"github.com/openware/pkg/order"
 	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/stats"
 	"github.com/openware/irix/stream"
 	"github.com/openware/irix/ticker"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 func printCurrencyFormat(price float64, displayCurrency currency.Code) string {

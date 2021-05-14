@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/config"
+	"github.com/openware/irix/config"
 	"github.com/openware/irix/sharedtestvalues"
 )
 

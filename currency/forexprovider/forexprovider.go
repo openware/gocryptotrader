@@ -5,13 +5,13 @@ package forexprovider
 import (
 	"errors"
 
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	currencyconverter "github.com/thrasher-corp/gocryptotrader/currency/forexprovider/currencyconverterapi"
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/currencylayer"
-	exchangeratehost "github.com/thrasher-corp/gocryptotrader/currency/forexprovider/exchangerate.host"
-	exchangerates "github.com/thrasher-corp/gocryptotrader/currency/forexprovider/exchangeratesapi.io"
-	fixer "github.com/thrasher-corp/gocryptotrader/currency/forexprovider/fixer.io"
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/openexchangerates"
+	"github.com/openware/pkg/currency/forexprovider/base"
+	currencyconverter "github.com/openware/pkg/currency/forexprovider/currencyconverterapi"
+	"github.com/openware/pkg/currency/forexprovider/currencylayer"
+	exchangeratehost "github.com/openware/pkg/currency/forexprovider/exchangerate.host"
+	exchangerates "github.com/openware/pkg/currency/forexprovider/exchangeratesapi.io"
+	fixer "github.com/openware/pkg/currency/forexprovider/fixer.io"
+	"github.com/openware/pkg/currency/forexprovider/openexchangerates"
 )
 
 // GetSupportedForexProviders returns a list of supported forex providers

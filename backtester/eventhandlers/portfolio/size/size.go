@@ -3,10 +3,10 @@ package size
 import (
 	"fmt"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	"github.com/thrasher-corp/gocryptotrader/backtester/config"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/exchange"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/order"
+	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/gocryptotrader/backtester/config"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/exchange"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/order"
 	gctorder "github.com/openware/pkg/order"
 )
 

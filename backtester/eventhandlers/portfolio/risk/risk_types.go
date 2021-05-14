@@ -3,10 +3,10 @@ package risk
 import (
 	"errors"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio/compliance"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/order"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio/compliance"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/order"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
 )
 

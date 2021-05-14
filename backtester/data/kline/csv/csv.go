@@ -9,14 +9,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	gctkline "github.com/thrasher-corp/gocryptotrader/backtester/data/kline"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/backtester/common"
+	gctkline "github.com/openware/gocryptotrader/backtester/data/kline"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
 	"github.com/openware/pkg/trade"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // LoadData is a basic csv reader which converts the found CSV file into a kline item

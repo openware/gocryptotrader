@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/gofrs/uuid"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
 )
 

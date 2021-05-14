@@ -3,12 +3,12 @@ package currencystatistics
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio/compliance"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/fill"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/order"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/signal"
+	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio/compliance"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/fill"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/order"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/signal"
 )
 
 // CurrencyStats defines what is expected in order to

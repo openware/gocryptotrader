@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/drivers"
-	"github.com/thrasher-corp/gocryptotrader/database/testhelpers"
+	"github.com/openware/gocryptotrader/database"
+	"github.com/openware/gocryptotrader/database/drivers"
+	"github.com/openware/gocryptotrader/database/testhelpers"
 )
 
 func TestMain(m *testing.M) {

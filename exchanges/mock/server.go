@@ -13,9 +13,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/crypto"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common/crypto"
+	"github.com/openware/gocryptotrader/common/file"
 )
 
 // DefaultDirectory defines the main mock directory

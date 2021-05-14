@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/strategies/base"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/strategies/dollarcostaverage"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/strategies/rsi"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/strategies/base"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/strategies/dollarcostaverage"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/strategies/rsi"
 )
 
 // LoadStrategyByName returns the strategy by its name

@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/engine"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/engine"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"

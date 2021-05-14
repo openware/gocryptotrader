@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	"github.com/thrasher-corp/gocryptotrader/backtester/data"
-	datakline "github.com/thrasher-corp/gocryptotrader/backtester/data/kline"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/event"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/kline"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/gocryptotrader/backtester/data"
+	datakline "github.com/openware/gocryptotrader/backtester/data/kline"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/event"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/kline"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
 	gctkline "github.com/openware/pkg/kline"
 )

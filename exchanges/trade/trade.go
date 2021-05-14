@@ -9,14 +9,14 @@ import (
 	"time"
 
 	"github.com/gofrs/uuid"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/database"
-	tradesql "github.com/thrasher-corp/gocryptotrader/database/repository/trade"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/database"
+	tradesql "github.com/openware/gocryptotrader/database/repository/trade"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // Setup creates the trade processor if trading is supported

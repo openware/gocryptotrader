@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/drivers"
-	"github.com/thrasher-corp/gocryptotrader/database/testhelpers"
+	"github.com/openware/gocryptotrader/database"
+	"github.com/openware/gocryptotrader/database/drivers"
+	"github.com/openware/gocryptotrader/database/testhelpers"
 )
 
 var (

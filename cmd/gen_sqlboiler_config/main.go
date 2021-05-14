@@ -8,10 +8,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/core"
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/repository"
+	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/core"
+	"github.com/openware/gocryptotrader/database"
+	"github.com/openware/gocryptotrader/database/repository"
 )
 
 var (

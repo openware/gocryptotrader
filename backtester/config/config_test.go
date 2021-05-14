@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/drivers"
+	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/database"
+	"github.com/openware/gocryptotrader/database/drivers"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/kline"
 )

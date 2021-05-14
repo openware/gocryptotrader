@@ -13,14 +13,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/core"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common/file"
+	"github.com/openware/gocryptotrader/core"
 )
 
 const (
 	// DefaultRepo is the main example repository
-	DefaultRepo = "https://api.github.com/repos/thrasher-corp/gocryptotrader"
+	DefaultRepo = "https://api.github.com/repos/openware/gocryptotrader"
 
 	// GithubAPIEndpoint allows the program to query your repository
 	// contributor list

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common"
 )
 
 type responsePayload struct {

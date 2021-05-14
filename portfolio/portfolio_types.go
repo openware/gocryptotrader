@@ -3,7 +3,7 @@ package portfolio
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/pkg/currency"
 )
 
 // Base holds the portfolio base addresses

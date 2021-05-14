@@ -5,14 +5,14 @@ import (
 	"sort"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	gctcommon "github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/math"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/backtester/common"
+	gctcommon "github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common/math"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
 	gctkline "github.com/openware/pkg/kline"
 	gctorder "github.com/openware/pkg/order"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // CalculateResults calculates all statistics for the exchange, asset, currency pair

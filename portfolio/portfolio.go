@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/log"
 )
 
 const (

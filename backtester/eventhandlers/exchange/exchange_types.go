@@ -3,12 +3,12 @@ package exchange
 import (
 	"errors"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/config"
-	"github.com/thrasher-corp/gocryptotrader/backtester/data"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/fill"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/order"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/engine"
+	"github.com/openware/gocryptotrader/backtester/config"
+	"github.com/openware/gocryptotrader/backtester/data"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/fill"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/order"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/engine"
 	"github.com/openware/pkg/asset"
 	gctorder "github.com/openware/pkg/order"
 )

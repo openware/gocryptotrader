@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/database"
+	"github.com/openware/gocryptotrader/database"
 )
 
 // Errors for config validation

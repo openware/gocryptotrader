@@ -1,6 +1,6 @@
 package database
 
-import "github.com/thrasher-corp/gocryptotrader/log"
+import "github.com/openware/gocryptotrader/log"
 
 // Logger implements io.Writer interface to redirect SQLBoiler debug output to GCT logger
 type Logger struct{}

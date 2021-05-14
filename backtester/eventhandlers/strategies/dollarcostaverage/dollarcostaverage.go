@@ -3,12 +3,12 @@ package dollarcostaverage
 import (
 	"fmt"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	"github.com/thrasher-corp/gocryptotrader/backtester/data"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/strategies/base"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/signal"
-	gctcommon "github.com/thrasher-corp/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/gocryptotrader/backtester/data"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/strategies/base"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/signal"
+	gctcommon "github.com/openware/gocryptotrader/common"
 	"github.com/openware/pkg/order"
 )
 

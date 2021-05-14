@@ -6,13 +6,13 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/backtest"
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	"github.com/thrasher-corp/gocryptotrader/backtester/config"
-	gctconfig "github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/engine"
-	gctlog "github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/signaler"
+	"github.com/openware/gocryptotrader/backtester/backtest"
+	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/gocryptotrader/backtester/config"
+	gctconfig "github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/engine"
+	gctlog "github.com/openware/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/signaler"
 )
 
 func main() {

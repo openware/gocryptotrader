@@ -3,14 +3,14 @@ package modules
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/account"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
 	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/ticker"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 )
 
 const (

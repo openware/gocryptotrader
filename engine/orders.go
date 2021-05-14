@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"github.com/gofrs/uuid"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/communications/base"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/engine/subsystem"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/communications/base"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/engine/subsystem"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/order"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // vars for the fund manager package

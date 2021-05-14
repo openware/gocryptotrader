@@ -6,7 +6,7 @@ import (
 
 	"github.com/gorilla/websocket"
 	exchange "github.com/openware/irix"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 const (

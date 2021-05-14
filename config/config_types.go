@@ -4,13 +4,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/database"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/database"
 	"github.com/openware/irix/protocol"
-	gctscript "github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
+	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
+	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/portfolio"
+	"github.com/openware/gocryptotrader/portfolio/banking"
 )
 
 // Constants declared here are filename strings and test strings

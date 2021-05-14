@@ -1,7 +1,7 @@
 package kline
 
 import (
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/event"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/event"
 )
 
 // Kline holds kline data and an event to be processed as

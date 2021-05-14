@@ -1,8 +1,8 @@
 package holdings
 
 import (
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/fill"
+	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/fill"
 	"github.com/openware/pkg/order"
 )
 

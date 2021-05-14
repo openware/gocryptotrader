@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/irix/config"
+	"github.com/openware/pkg/currency"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/kline"
@@ -20,7 +20,7 @@ import (
 	"github.com/openware/irix/stream"
 	"github.com/openware/irix/ticker"
 	"github.com/openware/pkg/trade"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // GetDefaultConfig returns a default exchange config

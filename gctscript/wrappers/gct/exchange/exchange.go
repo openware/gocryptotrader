@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/engine"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/engine"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/account"
 	"github.com/openware/pkg/asset"
@@ -16,8 +16,8 @@ import (
 	"github.com/openware/pkg/order"
 	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/ticker"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/gocryptotrader/portfolio/banking"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 )
 
 // Exchange implements all required methods for Wrapper

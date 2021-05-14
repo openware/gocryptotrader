@@ -6,14 +6,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/core"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/core"
+	"github.com/openware/pkg/currency"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/order"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 )
 
 // Please supply your own keys here for due diligence testing

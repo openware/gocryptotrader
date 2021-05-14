@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
+	"github.com/openware/gocryptotrader/backtester/common"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // GenerateReport sends final data from statistics to a template

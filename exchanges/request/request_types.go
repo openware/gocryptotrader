@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common/timedmutex"
+	"github.com/openware/gocryptotrader/common/timedmutex"
 	"github.com/openware/pkg/nonce"
 )
 

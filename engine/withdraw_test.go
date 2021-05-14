@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/irix/config"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/portfolio/banking"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 )
 
 const (

@@ -1,9 +1,9 @@
 package settings
 
 import (
-	"github.com/thrasher-corp/gocryptotrader/backtester/config"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio/compliance"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
+	"github.com/openware/gocryptotrader/backtester/config"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio/compliance"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
 )
 
 // Settings holds all important information for the portfolio manager

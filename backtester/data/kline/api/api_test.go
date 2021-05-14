@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/engine"
+	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/engine"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/asset"
 	gctkline "github.com/openware/pkg/kline"

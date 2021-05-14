@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	gctcommon "github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	gctcommon "github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common/file"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // ReadConfigFromFile will take a config from a path

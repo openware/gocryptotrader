@@ -8,7 +8,7 @@ import (
 
 	objects "github.com/d5/tengo/v2"
 	"github.com/openware/pkg/asset"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/modules/ta/indicators"
+	"github.com/openware/gocryptotrader/gctscript/modules/ta/indicators"
 )
 
 var (

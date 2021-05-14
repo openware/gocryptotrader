@@ -3,7 +3,7 @@ package simulator
 import (
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/irix/bitstamp"
 )

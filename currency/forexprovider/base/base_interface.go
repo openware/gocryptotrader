@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common"
 )
 
 // IFXProvider enforces standard functions for all foreign exchange providers

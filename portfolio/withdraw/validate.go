@@ -4,9 +4,9 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/validate"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
+	"github.com/openware/gocryptotrader/portfolio"
 )
 
 // Validate takes interface and passes to asset type to check the request meets requirements to submit

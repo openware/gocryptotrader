@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/gofrs/uuid"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
+	"github.com/openware/gocryptotrader/dispatch"
 	"github.com/openware/pkg/asset"
 )
 

@@ -10,11 +10,11 @@ import (
 	"testing"
 
 	objects "github.com/d5/tengo/v2"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/engine"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/engine"
 	"github.com/openware/pkg/asset"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/modules"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/modules/gct"
+	"github.com/openware/gocryptotrader/gctscript/modules"
+	"github.com/openware/gocryptotrader/gctscript/modules/gct"
 )
 
 func TestMain(m *testing.M) {

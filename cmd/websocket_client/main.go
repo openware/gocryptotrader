@@ -8,9 +8,9 @@ import (
 	"net/http"
 
 	"github.com/gorilla/websocket"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/crypto"
-	"github.com/thrasher-corp/gocryptotrader/config"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common/crypto"
+	"github.com/openware/irix/config"
 	"github.com/openware/pkg/asset"
 )
 

@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	withdrawDataStore "github.com/thrasher-corp/gocryptotrader/database/repository/withdraw"
+	withdrawDataStore "github.com/openware/gocryptotrader/database/repository/withdraw"
 	exchange "github.com/openware/irix"
-	"github.com/thrasher-corp/gocryptotrader/gctrpc"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/gocryptotrader/gctrpc"
+	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 

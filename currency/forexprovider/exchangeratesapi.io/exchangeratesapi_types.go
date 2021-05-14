@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
+	"github.com/openware/pkg/currency/forexprovider/base"
 	"github.com/openware/pkg/request"
 )
 

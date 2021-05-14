@@ -2,7 +2,7 @@ package ta
 
 import (
 	"github.com/d5/tengo/v2"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/modules/ta/indicators"
+	"github.com/openware/gocryptotrader/gctscript/modules/ta/indicators"
 )
 
 // Modules map of all loadable modules

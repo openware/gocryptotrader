@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/convert"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common/convert"
+	"github.com/openware/irix/config"
+	"github.com/openware/pkg/currency"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/account"
 	"github.com/openware/pkg/asset"
@@ -19,8 +19,8 @@ import (
 	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/stream"
 	"github.com/openware/pkg/trade"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 )
 
 // Note: GoCryptoTrader wrapper funcs currently only support SPOT trades.

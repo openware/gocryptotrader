@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/communications/base"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/communications/base"
+	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/log"
 )
 
 const (

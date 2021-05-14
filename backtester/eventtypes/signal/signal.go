@@ -1,7 +1,7 @@
 package signal
 
 import (
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/order"
 )
 

@@ -6,12 +6,12 @@ import (
 	"path/filepath"
 	"reflect"
 
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/drivers"
-	psqlConn "github.com/thrasher-corp/gocryptotrader/database/drivers/postgres"
-	sqliteConn "github.com/thrasher-corp/gocryptotrader/database/drivers/sqlite3"
-	"github.com/thrasher-corp/gocryptotrader/database/repository"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/database"
+	"github.com/openware/gocryptotrader/database/drivers"
+	psqlConn "github.com/openware/gocryptotrader/database/drivers/postgres"
+	sqliteConn "github.com/openware/gocryptotrader/database/drivers/sqlite3"
+	"github.com/openware/gocryptotrader/database/repository"
+	"github.com/openware/gocryptotrader/log"
 	"github.com/thrasher-corp/goose"
 	"github.com/thrasher-corp/sqlboiler/boil"
 )

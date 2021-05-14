@@ -3,11 +3,11 @@ package kline
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/common"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/event"
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/kline"
+	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/event"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/kline"
 	gctkline "github.com/openware/pkg/kline"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // HasDataAtTime verifies checks the underlying range data

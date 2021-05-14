@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
 )
 
 func TestGetLatestHoldings(t *testing.T) {

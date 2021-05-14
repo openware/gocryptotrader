@@ -3,7 +3,7 @@ package settings
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
+	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
 )
 
 // GetLatestHoldings returns the latest holdings after being sorted by time

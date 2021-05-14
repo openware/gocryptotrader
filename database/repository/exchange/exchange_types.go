@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/gofrs/uuid"
-	"github.com/thrasher-corp/gocryptotrader/common/cache"
+	"github.com/openware/gocryptotrader/common/cache"
 )
 
 var (

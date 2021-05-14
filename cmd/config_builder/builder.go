@@ -5,8 +5,8 @@ import (
 	"log"
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/engine"
+	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/engine"
 	exchange "github.com/openware/irix"
 )
 

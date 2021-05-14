@@ -10,18 +10,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/currency/coinmarketcap"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
+	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/irix/config"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/currency/coinmarketcap"
+	"github.com/openware/gocryptotrader/dispatch"
 	"github.com/openware/pkg/request"
 	"github.com/openware/pkg/trade"
-	gctscript "github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	gctlog "github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
-	"github.com/thrasher-corp/gocryptotrader/utils"
+	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
+	gctlog "github.com/openware/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/portfolio"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/gocryptotrader/utils"
 )
 
 // Engine contains configuration, portfolio, exchange & ticker data and is the

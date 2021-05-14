@@ -14,9 +14,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/pkg/request"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // SetDefaults sets default values for the exchange

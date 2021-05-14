@@ -16,7 +16,7 @@ import (
 	"strconv"
 	"strings"
 
-	gctcrypto "github.com/thrasher-corp/gocryptotrader/common/crypto"
+	gctcrypto "github.com/openware/gocryptotrader/common/crypto"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/order"
 	"github.com/openware/pkg/request"

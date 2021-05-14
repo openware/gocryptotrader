@@ -3,8 +3,8 @@ package smsglobal
 import (
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/communications/base"
-	"github.com/thrasher-corp/gocryptotrader/config"
+	"github.com/openware/gocryptotrader/communications/base"
+	"github.com/openware/irix/config"
 )
 
 var s SMSGlobal

@@ -7,8 +7,8 @@ import (
 
 	objects "github.com/d5/tengo/v2"
 	"github.com/thrasher-corp/gct-ta/indicators"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/modules"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/wrappers/validator"
+	"github.com/openware/gocryptotrader/gctscript/modules"
+	"github.com/openware/gocryptotrader/gctscript/wrappers/validator"
 )
 
 // RsiModule relative strength index indicator commands

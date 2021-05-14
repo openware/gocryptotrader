@@ -3,8 +3,8 @@ package order
 import (
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/backtester/eventtypes/event"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/openware/gocryptotrader/backtester/eventtypes/event"
+	"github.com/openware/pkg/currency"
 	gctorder "github.com/openware/pkg/order"
 )
 
