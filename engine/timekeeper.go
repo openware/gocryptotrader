@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/engine/subsystem"
-	"github.com/openware/gocryptotrader/log"
-	ntpclient "github.com/openware/gocryptotrader/ntpclient"
+	"github.com/openware/pkg/log"
+	ntpclient "github.com/openware/pkg/ntpclient"
 )
 
 // vars related to the NTP manager

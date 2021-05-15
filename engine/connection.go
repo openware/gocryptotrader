@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/openware/gocryptotrader/connchecker"
+	"github.com/openware/pkg/connchecker"
 	"github.com/openware/gocryptotrader/engine/subsystem"
-	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/log"
 	"github.com/openware/irix/config"
 )
 
