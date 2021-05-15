@@ -16,7 +16,7 @@ require (
 	github.com/lib/pq v1.10.1
 	github.com/mattn/go-sqlite3 v1.14.7
 	github.com/mitchellh/mapstructure v1.3.3 // indirect
-	github.com/openware/irix v0.0.0-20210515163300-5f55706caa3f
+	github.com/openware/irix v0.0.0-20210515165530-30ee3a3dbdd6
 	github.com/openware/pkg v0.0.0-20210515163747-fd7e8dc87e8c
 	github.com/pelletier/go-toml v1.8.0 // indirect
 	github.com/pkg/errors v0.9.1

@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/common"
+	"github.com/openware/pkg/log"
 	"github.com/openware/pkg/currency"
 )
 

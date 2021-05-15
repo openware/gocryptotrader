@@ -292,8 +292,8 @@ github.com/onsi/gomega v1.7.1/go.mod h1:XdKZgCCFLUoM/7CFJVPcG8C1xQ1AJ0vpAezJrB7J
 github.com/onsi/gomega v1.10.1/go.mod h1:iN09h71vgCQne3DLsj+A5owkum+a2tYe+TOCB1ybHNo=
 github.com/onsi/gomega v1.11.0/go.mod h1:azGKhqFUon9Vuj0YmTfLSmx0FUwqXYSTl5re8lQLTUg=
 github.com/opentracing/opentracing-go v1.1.0/go.mod h1:UkNAQd3GIcIGf0SeVgPpRdFStlNbqXla1AfSYxPUl2o=
-github.com/openware/irix v0.0.0-20210515163300-5f55706caa3f h1:ypTUcR7ct84S+4nI4RPTwh6ri7DUMzx5HwxTEXW+SGc=
-github.com/openware/irix v0.0.0-20210515163300-5f55706caa3f/go.mod h1:PYwIZneHYpzSEwMfVFSwfT8+LPQEWUme+trVtgxfaSY=
+github.com/openware/irix v0.0.0-20210515165530-30ee3a3dbdd6 h1:+KhYvT4Hxb08Utg0dasJaMr1QQbmOoeRlGTmTDgrI/o=
+github.com/openware/irix v0.0.0-20210515165530-30ee3a3dbdd6/go.mod h1:PYwIZneHYpzSEwMfVFSwfT8+LPQEWUme+trVtgxfaSY=
 github.com/openware/pkg v0.0.0-20210429001156-c20b7abcd29b/go.mod h1:/Ezc6/2qTkAYiY6/m4xfkfTnLEweDubipuoQzRxh8tI=
 github.com/openware/pkg v0.0.0-20210515163747-fd7e8dc87e8c h1:YAaqj1HTYDvlAMBRNrYY0O+sgU/UWLqPLsSXkCzPeTY=
 github.com/openware/pkg v0.0.0-20210515163747-fd7e8dc87e8c/go.mod h1:NSdBp+jTuZVclcsae53esLjZkWnndffbQAO2jyXx7Xc=

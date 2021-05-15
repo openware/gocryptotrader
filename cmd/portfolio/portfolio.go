@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/openware/gocryptotrader/portfolio"
+	"github.com/openware/irix/portfolio"
 	"github.com/openware/irix/bitfinex"
 	"github.com/openware/irix/config"
 	"github.com/openware/pkg/asset"
