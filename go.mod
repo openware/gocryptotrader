@@ -14,7 +14,7 @@ require (
 	github.com/kat-co/vala v0.0.0-20170210184112-42e1d8b61f12
 	github.com/lib/pq v1.10.1
 	github.com/mattn/go-sqlite3 v1.14.7
-	github.com/openware/irix v0.0.0-20210514170630-ff7b60187766
+	github.com/openware/irix v0.0.0-20210515110005-dc1e123e1c51
 	github.com/openware/pkg v0.0.0-20210514151301-3365e5b9af1a
 	github.com/pkg/errors v0.9.1
 	github.com/pquerna/otp v1.3.0
