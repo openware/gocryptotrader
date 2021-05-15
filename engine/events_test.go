@@ -4,10 +4,10 @@ import (
 	"testing"
 
 	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/ticker"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/orderbook"
 )
 
 const (

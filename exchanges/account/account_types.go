@@ -4,9 +4,9 @@ import (
 	"sync"
 
 	"github.com/gofrs/uuid"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/dispatch"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // Vars for the ticker package

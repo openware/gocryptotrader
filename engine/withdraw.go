@@ -5,10 +5,10 @@ import (
 	"time"
 
 	withdrawDataStore "github.com/openware/gocryptotrader/database/repository/withdraw"
-	exchange "github.com/openware/irix"
 	"github.com/openware/gocryptotrader/gctrpc"
 	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
+	exchange "github.com/openware/irix"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 

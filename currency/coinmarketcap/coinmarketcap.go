@@ -15,8 +15,8 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/pkg/request"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/request"
 )
 
 // SetDefaults sets default values for the exchange

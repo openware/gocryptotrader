@@ -8,19 +8,19 @@ import (
 	"sync"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/log"
 	exchange "github.com/openware/irix"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/pkg/kline"
+	"github.com/openware/irix/config"
 	"github.com/openware/irix/okgroup"
-	"github.com/openware/pkg/order"
 	"github.com/openware/irix/protocol"
-	"github.com/openware/pkg/request"
 	"github.com/openware/irix/stream"
 	"github.com/openware/irix/ticker"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/kline"
+	"github.com/openware/pkg/order"
+	"github.com/openware/pkg/request"
 	"github.com/openware/pkg/trade"
-	"github.com/openware/gocryptotrader/log"
 )
 
 // GetDefaultConfig returns a default exchange config

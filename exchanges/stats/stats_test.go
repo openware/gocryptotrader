@@ -3,8 +3,8 @@ package stats
 import (
 	"testing"
 
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 const (

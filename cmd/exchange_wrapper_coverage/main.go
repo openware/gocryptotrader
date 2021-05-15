@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/engine"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"
 )
 

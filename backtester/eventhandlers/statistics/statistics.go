@@ -12,9 +12,9 @@ import (
 	"github.com/openware/gocryptotrader/backtester/eventtypes/order"
 	"github.com/openware/gocryptotrader/backtester/eventtypes/signal"
 	gctcommon "github.com/openware/gocryptotrader/common"
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/asset"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // Reset returns the struct to defaults

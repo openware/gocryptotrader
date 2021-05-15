@@ -12,13 +12,13 @@ import (
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/common/convert"
 	"github.com/openware/gocryptotrader/core"
-	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	exchange "github.com/openware/irix"
+	"github.com/openware/irix/stream"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
-	"github.com/openware/irix/stream"
-	"github.com/openware/gocryptotrader/portfolio/withdraw"
 )
 
 // Please supply you own test keys here for due diligence testing.

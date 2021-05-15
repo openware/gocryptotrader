@@ -8,11 +8,11 @@ import (
 	"github.com/openware/gocryptotrader/backtester/common"
 	gctcommon "github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/common/math"
-	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	gctkline "github.com/openware/pkg/kline"
 	gctorder "github.com/openware/pkg/order"
-	"github.com/openware/gocryptotrader/log"
 )
 
 // CalculateResults calculates all statistics for the exchange, asset, currency pair

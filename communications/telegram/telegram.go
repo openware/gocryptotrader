@@ -14,8 +14,8 @@ import (
 
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/communications/base"
-	"github.com/openware/irix/config"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/irix/config"
 )
 
 const (

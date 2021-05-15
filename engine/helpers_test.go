@@ -17,12 +17,12 @@ import (
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/common/file"
 	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/account"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/stats"
 	"github.com/openware/irix/ticker"
+	"github.com/openware/pkg/account"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/orderbook"
 )
 
 func CreateTestBot(t *testing.T) *Engine {

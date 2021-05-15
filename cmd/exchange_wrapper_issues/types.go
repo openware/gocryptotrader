@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 
 	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // variables for command line overrides

@@ -6,8 +6,8 @@ import (
 
 	"github.com/gofrs/uuid"
 	"github.com/openware/gocryptotrader/common/cache"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/portfolio/banking"
+	"github.com/openware/pkg/currency"
 )
 
 // RequestType used for easy matching of int type to Word

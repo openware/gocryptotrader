@@ -7,10 +7,10 @@ import (
 	"testing"
 
 	"github.com/openware/gocryptotrader/core"
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/validate"
 	"github.com/openware/gocryptotrader/portfolio"
 	"github.com/openware/gocryptotrader/portfolio/banking"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/validate"
 )
 
 const (

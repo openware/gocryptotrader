@@ -11,15 +11,15 @@ import (
 
 	"github.com/gorilla/websocket"
 	"github.com/openware/gocryptotrader/common/crypto"
-	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/log"
 	exchange "github.com/openware/irix"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/pkg/order"
-	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/stream"
 	"github.com/openware/irix/stream/buffer"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/order"
+	"github.com/openware/pkg/orderbook"
 	"github.com/openware/pkg/trade"
-	"github.com/openware/gocryptotrader/log"
 )
 
 const (

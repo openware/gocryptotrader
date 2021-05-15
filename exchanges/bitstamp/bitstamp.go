@@ -14,11 +14,11 @@ import (
 
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/common/crypto"
-	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/log"
 	exchange "github.com/openware/irix"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/order"
 	"github.com/openware/pkg/request"
-	"github.com/openware/gocryptotrader/log"
 )
 
 const (

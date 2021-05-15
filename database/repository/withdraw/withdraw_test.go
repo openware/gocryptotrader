@@ -9,13 +9,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/database"
 	"github.com/openware/gocryptotrader/database/drivers"
 	"github.com/openware/gocryptotrader/database/repository/exchange"
 	"github.com/openware/gocryptotrader/database/testhelpers"
 	"github.com/openware/gocryptotrader/portfolio/banking"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/pkg/currency"
 )
 
 var (

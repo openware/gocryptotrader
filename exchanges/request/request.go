@@ -15,9 +15,9 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common/timedmutex"
+	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/pkg/mock"
 	"github.com/openware/pkg/nonce"
-	"github.com/openware/gocryptotrader/log"
 )
 
 // New returns a new Requester

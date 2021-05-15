@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/order"
 )
 

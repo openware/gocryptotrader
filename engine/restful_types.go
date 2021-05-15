@@ -3,9 +3,9 @@ package engine
 import (
 	"net/http"
 
+	"github.com/openware/irix/ticker"
 	"github.com/openware/pkg/account"
 	"github.com/openware/pkg/orderbook"
-	"github.com/openware/irix/ticker"
 )
 
 // Route is a sub type that holds the request routes

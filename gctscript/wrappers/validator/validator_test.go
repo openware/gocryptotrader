@@ -4,11 +4,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
-	"github.com/openware/gocryptotrader/portfolio/withdraw"
 )
 
 const (

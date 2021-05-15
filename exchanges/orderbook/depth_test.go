@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/gofrs/uuid"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 var id, _ = uuid.NewV4()

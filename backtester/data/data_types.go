@@ -4,8 +4,8 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/backtester/common"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // HandlerPerCurrency stores an event handler per exchange asset pair

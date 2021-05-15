@@ -34,13 +34,13 @@ import (
 	"github.com/openware/gocryptotrader/backtester/eventtypes/signal"
 	"github.com/openware/gocryptotrader/backtester/report"
 	gctcommon "github.com/openware/gocryptotrader/common"
-	"github.com/openware/pkg/currency"
 	gctdatabase "github.com/openware/gocryptotrader/database"
 	"github.com/openware/gocryptotrader/engine"
+	"github.com/openware/gocryptotrader/log"
 	gctexchange "github.com/openware/irix"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	gctkline "github.com/openware/pkg/kline"
-	"github.com/openware/gocryptotrader/log"
 )
 
 // New returns a new BackTest instance

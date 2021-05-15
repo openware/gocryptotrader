@@ -9,8 +9,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/openware/irix/config"
 	exchange "github.com/openware/irix"
+	"github.com/openware/irix/config"
 	"github.com/openware/irix/sharedtestvalues"
 )
 

@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/backtester/common"
+	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
-	"github.com/openware/gocryptotrader/log"
 )
 
 // GenerateReport sends final data from statistics to a template

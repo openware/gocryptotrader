@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/order"
-	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/sharedtestvalues"
 	"github.com/openware/irix/stream"
 	"github.com/openware/irix/ticker"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/order"
+	"github.com/openware/pkg/orderbook"
 )
 
 func TestWebsocketDataHandlerProcess(t *testing.T) {

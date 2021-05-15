@@ -10,11 +10,11 @@ import (
 	"github.com/gofrs/uuid"
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/communications/base"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/engine/subsystem"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/pkg/order"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/order"
 )
 
 // vars for the fund manager package

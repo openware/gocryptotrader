@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/openware/irix/config"
-	"github.com/openware/pkg/mock"
 	"github.com/openware/irix/sharedtestvalues"
+	"github.com/openware/pkg/mock"
 )
 
 const mockFile = "../../testdata/http_mock/gemini/gemini.json"

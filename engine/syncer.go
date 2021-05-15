@@ -6,10 +6,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/irix/ticker"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/irix/ticker"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // const holds the sync item types

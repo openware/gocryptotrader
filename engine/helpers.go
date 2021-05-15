@@ -17,19 +17,19 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pquerna/otp/totp"
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/common/file"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/dispatch"
-	exchange "github.com/openware/irix"
-	"github.com/openware/pkg/account"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/pkg/orderbook"
-	"github.com/openware/irix/stats"
-	"github.com/openware/irix/ticker"
 	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/portfolio"
+	exchange "github.com/openware/irix"
+	"github.com/openware/irix/stats"
+	"github.com/openware/irix/ticker"
+	"github.com/openware/pkg/account"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/orderbook"
+	"github.com/pquerna/otp/totp"
 )
 
 var (

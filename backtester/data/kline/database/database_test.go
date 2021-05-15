@@ -10,15 +10,15 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/backtester/common"
-	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/database"
 	"github.com/openware/gocryptotrader/database/drivers"
 	exchangeDB "github.com/openware/gocryptotrader/database/repository/exchange"
 	"github.com/openware/gocryptotrader/database/repository/trade"
 	"github.com/openware/gocryptotrader/database/testhelpers"
 	"github.com/openware/gocryptotrader/engine"
+	"github.com/openware/irix/config"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	gctkline "github.com/openware/pkg/kline"
 	gctorder "github.com/openware/pkg/order"
 )

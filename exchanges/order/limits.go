@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/shopspring/decimal"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/shopspring/decimal"
 )
 
 var (

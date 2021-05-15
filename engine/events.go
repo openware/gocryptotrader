@@ -7,12 +7,12 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/communications/base"
-	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/pkg/orderbook"
-	"github.com/openware/irix/ticker"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/irix/config"
+	"github.com/openware/irix/ticker"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/orderbook"
 )
 
 // TO-DO MAKE THIS A SERVICE SUBSYSTEM

@@ -11,17 +11,17 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/currency/coinmarketcap"
 	"github.com/openware/gocryptotrader/dispatch"
-	"github.com/openware/pkg/request"
-	"github.com/openware/pkg/trade"
 	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
 	gctlog "github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/portfolio"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	"github.com/openware/gocryptotrader/utils"
+	"github.com/openware/irix/config"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/currency/coinmarketcap"
+	"github.com/openware/pkg/request"
+	"github.com/openware/pkg/trade"
 )
 
 // Engine contains configuration, portfolio, exchange & ticker data and is the

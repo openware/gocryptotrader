@@ -9,12 +9,12 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/pkg/orderbook"
+	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/irix/stream"
 	"github.com/openware/irix/ticker"
-	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/orderbook"
 	"github.com/toorop/go-pusher"
 )
 

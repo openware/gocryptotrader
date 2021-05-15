@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/openware/irix/config"
 	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/portfolio"
+	"github.com/openware/irix/config"
 )
 
 // RESTfulJSONResponse outputs a JSON response of the response interface

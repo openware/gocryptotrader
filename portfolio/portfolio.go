@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/currency"
 )
 
 const (

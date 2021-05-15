@@ -7,9 +7,9 @@ import (
 	"github.com/openware/gocryptotrader/backtester/data"
 	"github.com/openware/gocryptotrader/backtester/eventtypes/fill"
 	"github.com/openware/gocryptotrader/backtester/eventtypes/order"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/engine"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	gctorder "github.com/openware/pkg/order"
 )
 

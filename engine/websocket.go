@@ -8,10 +8,10 @@ import (
 
 	"github.com/gorilla/websocket"
 	"github.com/openware/gocryptotrader/common/crypto"
-	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/asset"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/irix/config"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // Const vars for websocket

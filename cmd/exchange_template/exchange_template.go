@@ -12,8 +12,8 @@ import (
 	"strings"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/irix/config"
 	"github.com/openware/gocryptotrader/core"
+	"github.com/openware/irix/config"
 	"github.com/openware/pkg/currency"
 )
 

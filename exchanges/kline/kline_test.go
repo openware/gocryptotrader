@@ -11,13 +11,13 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common/crypto"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/database"
 	"github.com/openware/gocryptotrader/database/drivers"
 	"github.com/openware/gocryptotrader/database/repository/candle"
 	"github.com/openware/gocryptotrader/database/repository/exchange"
 	"github.com/openware/gocryptotrader/database/testhelpers"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/order"
 )
 

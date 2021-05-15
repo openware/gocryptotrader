@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/openware/irix/config"
 	"github.com/openware/gocryptotrader/connchecker"
 	"github.com/openware/gocryptotrader/engine/subsystem"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/irix/config"
 )
 
 // connectionManager manages the connchecker

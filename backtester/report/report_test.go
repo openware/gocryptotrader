@@ -13,8 +13,8 @@ import (
 	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio/holdings"
 	"github.com/openware/gocryptotrader/backtester/eventhandlers/statistics"
 	"github.com/openware/gocryptotrader/backtester/eventhandlers/statistics/currencystatistics"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	gctkline "github.com/openware/pkg/kline"
 	gctorder "github.com/openware/pkg/order"
 )

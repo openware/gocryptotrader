@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/openware/irix/config"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/irix/config"
 )
 
 const (

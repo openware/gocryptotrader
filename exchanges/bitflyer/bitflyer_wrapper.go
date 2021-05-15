@@ -8,20 +8,20 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	exchange "github.com/openware/irix"
+	"github.com/openware/irix/config"
+	"github.com/openware/irix/protocol"
+	"github.com/openware/irix/ticker"
 	"github.com/openware/pkg/account"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
 	"github.com/openware/pkg/orderbook"
-	"github.com/openware/irix/protocol"
 	"github.com/openware/pkg/request"
-	"github.com/openware/irix/ticker"
 	"github.com/openware/pkg/trade"
-	"github.com/openware/gocryptotrader/log"
-	"github.com/openware/gocryptotrader/portfolio/withdraw"
 )
 
 // GetDefaultConfig returns a default exchange config

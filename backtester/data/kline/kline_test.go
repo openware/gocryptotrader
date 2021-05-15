@@ -8,8 +8,8 @@ import (
 	"github.com/openware/gocryptotrader/backtester/common"
 	"github.com/openware/gocryptotrader/backtester/eventtypes/event"
 	"github.com/openware/gocryptotrader/backtester/eventtypes/kline"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	gctkline "github.com/openware/pkg/kline"
 )
 

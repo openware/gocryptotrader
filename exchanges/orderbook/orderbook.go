@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/gofrs/uuid"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/dispatch"
-	"github.com/openware/pkg/asset"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // Get checks and returns the orderbook given an exchange name and currency pair

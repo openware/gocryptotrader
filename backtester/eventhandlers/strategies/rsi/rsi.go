@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/thrasher-corp/gct-ta/indicators"
 	"github.com/openware/gocryptotrader/backtester/common"
 	"github.com/openware/gocryptotrader/backtester/data"
 	"github.com/openware/gocryptotrader/backtester/eventhandlers/portfolio"
@@ -12,6 +11,7 @@ import (
 	"github.com/openware/gocryptotrader/backtester/eventtypes/signal"
 	gctcommon "github.com/openware/gocryptotrader/common"
 	"github.com/openware/pkg/order"
+	"github.com/thrasher-corp/gct-ta/indicators"
 )
 
 const (

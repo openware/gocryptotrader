@@ -16,8 +16,8 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/irix/protocol"
+	"github.com/openware/pkg/currency"
 )
 
 const (

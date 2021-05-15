@@ -6,8 +6,8 @@ import (
 	"github.com/openware/gocryptotrader/backtester/common"
 	"github.com/openware/gocryptotrader/backtester/eventtypes/event"
 	"github.com/openware/gocryptotrader/backtester/eventtypes/kline"
-	gctkline "github.com/openware/pkg/kline"
 	"github.com/openware/gocryptotrader/log"
+	gctkline "github.com/openware/pkg/kline"
 )
 
 // HasDataAtTime verifies checks the underlying range data

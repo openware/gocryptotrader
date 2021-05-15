@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/openware/pkg/currency"
 	"github.com/openware/irix/stream"
+	"github.com/openware/pkg/currency"
 )
 
 // TimeInterval Interval represents interval enum.

@@ -7,7 +7,6 @@ import (
 	"time"
 
 	"github.com/gofrs/uuid"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/database"
 	modelPSQL "github.com/openware/gocryptotrader/database/models/postgres"
 	modelSQLite "github.com/openware/gocryptotrader/database/models/sqlite3"
@@ -15,6 +14,7 @@ import (
 	exchangeDB "github.com/openware/gocryptotrader/database/repository/exchange"
 	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/pkg/currency"
 	"github.com/thrasher-corp/sqlboiler/boil"
 	"github.com/thrasher-corp/sqlboiler/queries/qm"
 )

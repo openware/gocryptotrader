@@ -9,8 +9,8 @@ import (
 	"time"
 
 	objects "github.com/d5/tengo/v2"
-	"github.com/thrasher-corp/gct-ta/indicators"
 	"github.com/openware/gocryptotrader/gctscript/wrappers/validator"
+	"github.com/thrasher-corp/gct-ta/indicators"
 )
 
 const errFailedConversion = "0 failed conversion"

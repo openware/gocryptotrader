@@ -5,8 +5,8 @@ import (
 
 	"github.com/openware/gocryptotrader/backtester/config"
 	"github.com/openware/gocryptotrader/backtester/eventhandlers/statistics"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
 )

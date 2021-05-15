@@ -17,8 +17,8 @@ import (
 	"github.com/openware/gocryptotrader/backtester/eventtypes/kline"
 	"github.com/openware/gocryptotrader/backtester/eventtypes/order"
 	"github.com/openware/gocryptotrader/backtester/eventtypes/signal"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	gctorder "github.com/openware/pkg/order"
 )
 

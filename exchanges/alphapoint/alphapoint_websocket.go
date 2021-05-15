@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/websocket"
-	exchange "github.com/openware/irix"
 	"github.com/openware/gocryptotrader/log"
+	exchange "github.com/openware/irix"
 )
 
 const (

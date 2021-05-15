@@ -23,10 +23,10 @@ import (
 	"github.com/openware/gocryptotrader/backtester/eventhandlers/strategies/base"
 	"github.com/openware/gocryptotrader/backtester/eventhandlers/strategies/dollarcostaverage"
 	"github.com/openware/gocryptotrader/backtester/report"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/engine"
 	gctexchange "github.com/openware/irix"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	gctkline "github.com/openware/pkg/kline"
 )
 

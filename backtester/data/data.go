@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	"github.com/openware/gocryptotrader/backtester/common"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // Setup creates a basic map

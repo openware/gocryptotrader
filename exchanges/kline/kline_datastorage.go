@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/database/repository/candle"
 	"github.com/openware/gocryptotrader/database/repository/exchange"
-	"github.com/openware/pkg/asset"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // LoadFromDatabase returns Item from database seeded data

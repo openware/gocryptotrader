@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/openware/gocryptotrader/common/convert"
-	exchange "github.com/openware/irix"
 	"github.com/openware/gocryptotrader/log"
+	exchange "github.com/openware/irix"
 )
 
 var (

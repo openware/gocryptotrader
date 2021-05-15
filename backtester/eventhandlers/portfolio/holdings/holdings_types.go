@@ -4,8 +4,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // ErrInitialFundsZero is an error when initial funds are zero or less

@@ -13,14 +13,14 @@ import (
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/common/convert"
 	"github.com/openware/gocryptotrader/common/crypto"
-	"github.com/openware/pkg/currency"
 	exchange "github.com/openware/irix"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/pkg/order"
-	"github.com/openware/pkg/orderbook"
 	"github.com/openware/irix/stream"
 	"github.com/openware/irix/stream/buffer"
 	"github.com/openware/irix/ticker"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/order"
+	"github.com/openware/pkg/orderbook"
 	"github.com/openware/pkg/trade"
 )
 

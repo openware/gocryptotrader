@@ -5,13 +5,13 @@ import (
 	"time"
 
 	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
+	"github.com/openware/irix/protocol"
+	"github.com/openware/irix/stream"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
-	"github.com/openware/irix/protocol"
 	"github.com/openware/pkg/request"
-	"github.com/openware/irix/stream"
 )
 
 // Endpoint authentication types

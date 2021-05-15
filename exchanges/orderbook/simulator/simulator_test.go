@@ -3,9 +3,9 @@ package simulator
 import (
 	"testing"
 
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/asset"
 	"github.com/openware/irix/bitstamp"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 func TestSimulate(t *testing.T) {

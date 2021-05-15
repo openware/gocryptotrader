@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/gctrpc"
+	"github.com/openware/pkg/currency"
 	"github.com/urfave/cli"
 )
 

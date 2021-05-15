@@ -17,10 +17,10 @@ import (
 	"github.com/openware/gocryptotrader/backtester/config"
 	"github.com/openware/gocryptotrader/backtester/eventhandlers/strategies"
 	gctcommon "github.com/openware/gocryptotrader/common"
-	gctconfig "github.com/openware/irix/config"
 	"github.com/openware/gocryptotrader/database"
 	dbPSQL "github.com/openware/gocryptotrader/database/drivers/postgres"
 	dbsqlite3 "github.com/openware/gocryptotrader/database/drivers/sqlite3"
+	gctconfig "github.com/openware/irix/config"
 	"github.com/openware/pkg/asset"
 	gctkline "github.com/openware/pkg/kline"
 )

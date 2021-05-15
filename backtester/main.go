@@ -9,10 +9,10 @@ import (
 	"github.com/openware/gocryptotrader/backtester/backtest"
 	"github.com/openware/gocryptotrader/backtester/common"
 	"github.com/openware/gocryptotrader/backtester/config"
-	gctconfig "github.com/openware/irix/config"
 	"github.com/openware/gocryptotrader/engine"
 	gctlog "github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/signaler"
+	gctconfig "github.com/openware/irix/config"
 )
 
 func main() {

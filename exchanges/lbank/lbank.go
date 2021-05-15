@@ -18,9 +18,9 @@ import (
 
 	gctcrypto "github.com/openware/gocryptotrader/common/crypto"
 	exchange "github.com/openware/irix"
+	"github.com/openware/irix/stream"
 	"github.com/openware/pkg/order"
 	"github.com/openware/pkg/request"
-	"github.com/openware/irix/stream"
 )
 
 // Lbank is the overarching type across this package

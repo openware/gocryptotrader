@@ -9,10 +9,10 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common/file"
+	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/pkg/currency/coinmarketcap"
 	"github.com/openware/pkg/currency/forexprovider"
 	"github.com/openware/pkg/currency/forexprovider/base"
-	"github.com/openware/gocryptotrader/log"
 )
 
 func init() {

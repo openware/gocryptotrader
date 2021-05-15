@@ -12,13 +12,13 @@ import (
 	"github.com/openware/gocryptotrader/common/convert"
 	"github.com/openware/gocryptotrader/common/file"
 	"github.com/openware/gocryptotrader/connchecker"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/database"
-	"github.com/openware/pkg/asset"
 	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
 	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/ntpclient"
 	"github.com/openware/gocryptotrader/portfolio/banking"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 const (

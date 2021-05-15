@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	objects "github.com/d5/tengo/v2"
-	"github.com/thrasher-corp/gct-ta/indicators"
 	"github.com/openware/gocryptotrader/gctscript/modules"
 	"github.com/openware/gocryptotrader/gctscript/wrappers/validator"
+	"github.com/thrasher-corp/gct-ta/indicators"
 )
 
 // BBandsModule bollinger bands indicator commands

@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/gctrpc"
+	"github.com/openware/pkg/currency"
 	"github.com/urfave/cli"
 )
 

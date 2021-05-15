@@ -14,7 +14,7 @@ require (
 	github.com/kat-co/vala v0.0.0-20170210184112-42e1d8b61f12
 	github.com/lib/pq v1.10.1
 	github.com/mattn/go-sqlite3 v1.14.7
-	github.com/openware/irix v0.0.0-20210515110005-dc1e123e1c51
+	github.com/openware/irix v0.0.0-20210515160543-e5401a15d50b
 	github.com/openware/pkg v0.0.0-20210515154903-e763b3b31f40
 	github.com/pkg/errors v0.9.1
 	github.com/pquerna/otp v1.3.0
@@ -29,7 +29,8 @@ require (
 	github.com/urfave/cli/v2 v2.3.0
 	github.com/volatiletech/null v8.0.0+incompatible
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
-	golang.org/x/net v0.0.0-20210316092652-d523dce5a7f4
+	golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4
+	golang.org/x/sys v0.0.0-20210510120138-977fb7262007 // indirect
 	golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba
 	google.golang.org/genproto v0.0.0-20210426193834-eac7f76ac494
 	google.golang.org/grpc v1.37.1

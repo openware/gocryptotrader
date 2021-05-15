@@ -15,10 +15,10 @@ import (
 
 	"github.com/google/go-querystring/query"
 	"github.com/openware/gocryptotrader/common/crypto"
+	"github.com/openware/gocryptotrader/log"
 	exchange "github.com/openware/irix"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/request"
-	"github.com/openware/gocryptotrader/log"
 )
 
 const (

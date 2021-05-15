@@ -7,8 +7,8 @@ import (
 	"time"
 
 	objects "github.com/d5/tengo/v2"
-	"github.com/openware/pkg/asset"
 	"github.com/openware/gocryptotrader/gctscript/modules/ta/indicators"
+	"github.com/openware/pkg/asset"
 )
 
 var (

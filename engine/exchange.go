@@ -6,10 +6,8 @@ import (
 	"sync"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/log"
 	exchange "github.com/openware/irix"
-	"github.com/openware/pkg/asset"
 	"github.com/openware/irix/binance"
 	"github.com/openware/irix/bitfinex"
 	"github.com/openware/irix/bitflyer"
@@ -22,6 +20,7 @@ import (
 	"github.com/openware/irix/coinbasepro"
 	"github.com/openware/irix/coinbene"
 	"github.com/openware/irix/coinut"
+	"github.com/openware/irix/config"
 	"github.com/openware/irix/exmo"
 	"github.com/openware/irix/ftx"
 	"github.com/openware/irix/gateio"
@@ -38,7 +37,8 @@ import (
 	"github.com/openware/irix/poloniex"
 	"github.com/openware/irix/yobit"
 	"github.com/openware/irix/zb"
-	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // vars related to exchange functions

@@ -22,9 +22,9 @@ import (
 	"strings"
 
 	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/pkg/currency/forexprovider/base"
 	"github.com/openware/pkg/request"
-	"github.com/openware/gocryptotrader/log"
 )
 
 // Setup sets appropriate values for CurrencyLayer

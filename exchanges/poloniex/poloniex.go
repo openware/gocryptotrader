@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common/crypto"
-	"github.com/openware/pkg/currency"
 	exchange "github.com/openware/irix"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/order"
 	"github.com/openware/pkg/request"
 )

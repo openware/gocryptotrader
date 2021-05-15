@@ -6,13 +6,13 @@ import (
 
 	objects "github.com/d5/tengo/v2"
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/pkg/kline"
-	"github.com/openware/pkg/order"
 	"github.com/openware/gocryptotrader/gctscript/modules/ta/indicators"
 	"github.com/openware/gocryptotrader/gctscript/wrappers"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
+	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/kline"
+	"github.com/openware/pkg/order"
 )
 
 var exchangeModule = map[string]objects.Object{

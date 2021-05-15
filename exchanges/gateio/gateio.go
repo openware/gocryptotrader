@@ -11,11 +11,11 @@ import (
 
 	"github.com/openware/gocryptotrader/common/convert"
 	"github.com/openware/gocryptotrader/common/crypto"
-	"github.com/openware/pkg/currency"
+	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	exchange "github.com/openware/irix"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/request"
-	"github.com/openware/gocryptotrader/portfolio/withdraw"
 )
 
 const (

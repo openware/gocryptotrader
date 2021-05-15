@@ -7,11 +7,11 @@ import (
 	"time"
 
 	"github.com/gofrs/uuid"
-	"github.com/openware/pkg/currency"
 	"github.com/openware/gocryptotrader/database"
 	"github.com/openware/gocryptotrader/database/drivers"
 	sqltrade "github.com/openware/gocryptotrader/database/repository/trade"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
 )

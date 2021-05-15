@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openware/irix/config"
-	"github.com/openware/pkg/currency"
 	exchange "github.com/openware/irix"
+	"github.com/openware/irix/config"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"
 	"github.com/openware/pkg/order"
 )

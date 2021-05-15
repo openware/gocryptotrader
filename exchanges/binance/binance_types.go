@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // withdrawals status codes description

@@ -15,8 +15,8 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/communications/base"
-	"github.com/openware/irix/config"
 	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/irix/config"
 )
 
 // const declares main slack url and commands that will be supported on client

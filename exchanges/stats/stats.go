@@ -4,8 +4,8 @@ import (
 	"errors"
 	"sort"
 
-	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/asset"
+	"github.com/openware/pkg/currency"
 )
 
 // Item holds various fields for storing currency pair stats

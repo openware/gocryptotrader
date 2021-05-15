@@ -9,17 +9,17 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/irix/config"
 	"github.com/openware/gocryptotrader/core"
 	"github.com/openware/gocryptotrader/dispatch"
 	"github.com/openware/gocryptotrader/engine"
-	"github.com/openware/pkg/request"
-	"github.com/openware/pkg/trade"
 	"github.com/openware/gocryptotrader/gctscript"
 	gctscriptVM "github.com/openware/gocryptotrader/gctscript/vm"
 	gctlog "github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	"github.com/openware/gocryptotrader/signaler"
+	"github.com/openware/irix/config"
+	"github.com/openware/pkg/request"
+	"github.com/openware/pkg/trade"
 )
 
 func main() {

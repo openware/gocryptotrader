@@ -8,14 +8,14 @@ import (
 	"sync"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/pkg/currency"
-	"github.com/openware/pkg/account"
-	"github.com/openware/pkg/order"
-	"github.com/openware/pkg/orderbook"
+	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/irix/stats"
 	"github.com/openware/irix/stream"
 	"github.com/openware/irix/ticker"
-	"github.com/openware/gocryptotrader/log"
+	"github.com/openware/pkg/account"
+	"github.com/openware/pkg/currency"
+	"github.com/openware/pkg/order"
+	"github.com/openware/pkg/orderbook"
 )
 
 func printCurrencyFormat(price float64, displayCurrency currency.Code) string {
