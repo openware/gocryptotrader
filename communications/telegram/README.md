@@ -39,7 +39,7 @@ developed by Telegram Messenger LLP
 	```go
 	import (
 	"github.com/openware/gocryptotrader/communications/telegram"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	)
 
 	t := new(telegram.Telegram)

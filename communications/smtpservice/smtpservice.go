@@ -8,7 +8,7 @@ import (
 
 	"github.com/openware/gocryptotrader/communications/base"
 	"github.com/openware/gocryptotrader/log"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 )
 
 const (

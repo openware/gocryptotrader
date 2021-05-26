@@ -20,7 +20,7 @@ import (
 	"github.com/openware/irix/coinbasepro"
 	"github.com/openware/irix/coinbene"
 	"github.com/openware/irix/coinut"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/irix/exmo"
 	"github.com/openware/irix/ftx"
 	"github.com/openware/irix/gateio"

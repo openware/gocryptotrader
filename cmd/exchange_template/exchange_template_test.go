@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 )
 
 func TestCheckExchangeName(t *testing.T) {

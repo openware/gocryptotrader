@@ -37,7 +37,7 @@ Join our slack to discuss all things related to GoCryptoTrader! [GoCryptoTrader 
 ```go
 import (
 "github.com/openware/gocryptotrader/communications/smsglobal"
-"github.com/openware/irix/config"
+"github.com/openware/gocryptotrader/config"
 )
 
 s := new(smsglobal.SMSGlobal)

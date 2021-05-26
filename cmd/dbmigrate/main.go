@@ -13,7 +13,7 @@ import (
 	dbPSQL "github.com/openware/gocryptotrader/database/drivers/postgres"
 	dbsqlite3 "github.com/openware/gocryptotrader/database/drivers/sqlite3"
 	"github.com/openware/gocryptotrader/database/repository"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/thrasher-corp/goose"
 )
 

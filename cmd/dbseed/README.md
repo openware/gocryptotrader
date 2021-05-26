@@ -51,7 +51,7 @@ For Linux/macOS users this is:
 
 and can be overridden with the ```-config``` flag
 
-``` --config value  config file to load (default: "~/.irix/config.json")```
+``` --config value  config file to load (default: "~/.gocryptotrader/config.json")```
 
 #### Usage
 

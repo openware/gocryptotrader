@@ -16,7 +16,7 @@ import (
 	"github.com/openware/gocryptotrader/database/repository/trade"
 	"github.com/openware/gocryptotrader/database/testhelpers"
 	"github.com/openware/gocryptotrader/engine"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/currency"
 	gctkline "github.com/openware/pkg/kline"

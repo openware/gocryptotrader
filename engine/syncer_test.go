@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 )
 
 func TestNewCurrencyPairSyncer(t *testing.T) {

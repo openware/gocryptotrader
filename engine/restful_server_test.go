@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 )
 
 func makeHTTPGetRequest(t *testing.T, response interface{}) *http.Response {

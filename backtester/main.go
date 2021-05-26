@@ -12,7 +12,7 @@ import (
 	"github.com/openware/gocryptotrader/engine"
 	gctlog "github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/signaler"
-	gctconfig "github.com/openware/irix/config"
+	gctconfig "github.com/openware/gocryptotrader/config"
 )
 
 func main() {

@@ -16,7 +16,7 @@ import (
 
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/common/file"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/irix/stats"
 	"github.com/openware/irix/ticker"
 	"github.com/openware/pkg/account"

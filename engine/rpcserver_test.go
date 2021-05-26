@@ -21,7 +21,7 @@ import (
 	"github.com/openware/gocryptotrader/gctrpc"
 	exchange "github.com/openware/irix"
 	"github.com/openware/irix/binance"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"

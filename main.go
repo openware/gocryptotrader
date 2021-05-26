@@ -17,7 +17,7 @@ import (
 	gctlog "github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	"github.com/openware/gocryptotrader/signaler"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/request"
 	"github.com/openware/pkg/trade"
 )

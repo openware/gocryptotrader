@@ -39,7 +39,7 @@ app and share different types of data
 ```go
 import (
 "github.com/openware/gocryptotrader/communications/slack"
-"github.com/openware/irix/config"
+"github.com/openware/gocryptotrader/config"
 )
 
 s := new(slack.Slack)

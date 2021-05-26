@@ -11,7 +11,7 @@ import (
 	"github.com/openware/gocryptotrader/core"
 	"github.com/openware/gocryptotrader/database"
 	"github.com/openware/gocryptotrader/database/repository"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 )
 
 var (

@@ -8,7 +8,7 @@ import (
 	"github.com/openware/gocryptotrader/communications/smsglobal"
 	"github.com/openware/gocryptotrader/communications/smtpservice"
 	"github.com/openware/gocryptotrader/communications/telegram"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 )
 
 // Communications is the overarching type across the communications packages

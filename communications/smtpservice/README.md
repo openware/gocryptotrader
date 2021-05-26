@@ -37,7 +37,7 @@ Join our slack to discuss all things related to GoCryptoTrader! [GoCryptoTrader 
 ```go
 import (
 "github.com/openware/gocryptotrader/communications/smtpservice"
-"github.com/openware/irix/config"
+"github.com/openware/gocryptotrader/config"
 )
 
 s := new(smtpservice.SMTPservice)

@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/currency"
 )

@@ -17,7 +17,7 @@ import (
 	"github.com/openware/gocryptotrader/portfolio"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	"github.com/openware/gocryptotrader/utils"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/currency/coinmarketcap"
 	"github.com/openware/pkg/request"

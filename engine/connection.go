@@ -7,7 +7,7 @@ import (
 	"github.com/openware/pkg/connchecker"
 	"github.com/openware/gocryptotrader/engine/subsystem"
 	"github.com/openware/pkg/log"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 )
 
 // connectionManager manages the connchecker

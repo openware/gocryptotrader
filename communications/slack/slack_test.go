@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/openware/gocryptotrader/communications/base"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 )
 
 const (

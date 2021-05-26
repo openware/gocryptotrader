@@ -3,7 +3,7 @@ package communications
 import (
 	"testing"
 
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 )
 
 func TestNewComm(t *testing.T) {

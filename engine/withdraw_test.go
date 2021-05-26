@@ -10,7 +10,7 @@ import (
 
 	"github.com/openware/gocryptotrader/portfolio/banking"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/currency"
 )
 

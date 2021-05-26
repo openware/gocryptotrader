@@ -20,7 +20,7 @@ import (
 	"github.com/openware/gocryptotrader/database"
 	dbPSQL "github.com/openware/gocryptotrader/database/drivers/postgres"
 	dbsqlite3 "github.com/openware/gocryptotrader/database/drivers/sqlite3"
-	gctconfig "github.com/openware/irix/config"
+	gctconfig "github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/asset"
 	gctkline "github.com/openware/pkg/kline"
 )

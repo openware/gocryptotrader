@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/openware/gocryptotrader/common/crypto"
 	"github.com/openware/gocryptotrader/log"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/currency"
 )

@@ -3,7 +3,7 @@ package engine
 import (
 	"testing"
 
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/irix/ticker"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/currency"

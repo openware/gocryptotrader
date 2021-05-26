@@ -20,7 +20,7 @@ import (
 	"github.com/openware/gocryptotrader/portfolio/banking"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	exchange "github.com/openware/irix"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/irix/ticker"
 	"github.com/openware/pkg/account"
 	"github.com/openware/pkg/asset"

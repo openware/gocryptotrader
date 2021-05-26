@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 
 	"github.com/openware/gocryptotrader/core"
-	"github.com/openware/irix/config"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/urfave/cli/v2"
 )
 
