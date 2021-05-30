@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/openware/gocryptotrader/communications/base"
-	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/config"
+	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/irix/ticker"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/currency"

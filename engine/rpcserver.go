@@ -23,10 +23,6 @@ import (
 	"github.com/openware/gocryptotrader/common/file/archive"
 	"github.com/openware/gocryptotrader/common/timeperiods"
 	"github.com/openware/gocryptotrader/database"
-	"github.com/openware/gocryptotrader/database/models/postgres"
-	"github.com/openware/gocryptotrader/database/models/sqlite3"
-	"github.com/openware/gocryptotrader/database/repository/audit"
-	exchangeDB "github.com/openware/gocryptotrader/database/repository/exchange"
 	"github.com/openware/gocryptotrader/gctrpc"
 	"github.com/openware/gocryptotrader/gctrpc/auth"
 	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
@@ -1849,51 +1845,6 @@ func (s *RPCServer) GetExchangeTickerStream(r *gctrpc.GetExchangeTickerStreamReq
 	}
 }
 
-// GetAuditEvent returns matching audit events from database
-func (s *RPCServer) GetAuditEvent(_ context.Context, r *gctrpc.GetAuditEventRequest) (*gctrpc.GetAuditEventResponse, error) {
-	UTCStartTime, err := time.Parse(common.SimpleTimeFormat, r.StartDate)
-	if err != nil {
-		return nil, err
-	}
-
-	UTCEndTime, err := time.Parse(common.SimpleTimeFormat, r.EndDate)
-	if err != nil {
-		return nil, err
-	}
-	events, err := audit.GetEvent(UTCStartTime, UTCEndTime, r.OrderBy, int(r.Limit))
-	if err != nil {
-		return nil, err
-	}
-
-	resp := gctrpc.GetAuditEventResponse{}
-
-	switch v := events.(type) {
-	case postgres.AuditEventSlice:
-		for x := range v {
-			tempEvent := &gctrpc.AuditEvent{
-				Type:       v[x].Type,
-				Identifier: v[x].Identifier,
-				Message:    v[x].Message,
-				Timestamp:  v[x].CreatedAt.In(time.UTC).Format(common.SimpleTimeFormatWithTimezone),
-			}
-
-			resp.Events = append(resp.Events, tempEvent)
-		}
-	case sqlite3.AuditEventSlice:
-		for x := range v {
-			tempEvent := &gctrpc.AuditEvent{
-				Type:       v[x].Type,
-				Identifier: v[x].Identifier,
-				Message:    v[x].Message,
-				Timestamp:  v[x].CreatedAt,
-			}
-			resp.Events = append(resp.Events, tempEvent)
-		}
-	}
-
-	return &resp, nil
-}
-
 // GetHistoricCandles returns historical candles for a given exchange
 func (s *RPCServer) GetHistoricCandles(_ context.Context, r *gctrpc.GetHistoricCandlesRequest) (*gctrpc.GetHistoricCandlesResponse, error) {
 	UTCStartTime, err := time.Parse(common.SimpleTimeFormat, r.Start)
@@ -1991,15 +1942,15 @@ func (s *RPCServer) GetHistoricCandles(_ context.Context, r *gctrpc.GetHistoricC
 		})
 	}
 
-	if r.Sync && !r.UseDb {
-		_, err = kline.StoreInDatabase(&klineItem, r.Force)
-		if err != nil {
-			if errors.Is(err, exchangeDB.ErrNoExchangeFound) {
-				return nil, errors.New("exchange was not found in database, you can seed existing data or insert a new exchange via the dbseed")
-			}
-			return nil, err
-		}
-	}
+	//if r.Sync && !r.UseDb {
+	//	_, err = kline.StoreInDatabase(&klineItem, r.Force)
+	//	if err != nil {
+	//		if errors.Is(err, exchangeDB.ErrNoExchangeFound) {
+	//			return nil, errors.New("exchange was not found in database, you can seed existing data or insert a new exchange via the dbseed")
+	//		}
+	//		return nil, err
+	//	}
+	//}
 
 	return &resp, nil
 }
@@ -2739,12 +2690,12 @@ func (s *RPCServer) ConvertTradesToCandles(_ context.Context, r *gctrpc.ConvertT
 		})
 	}
 
-	if r.Sync {
-		_, err = kline.StoreInDatabase(&klineItem, r.Force)
-		if err != nil {
-			return nil, err
-		}
-	}
+	//if r.Sync {
+	//	_, err = kline.StoreInDatabase(&klineItem, r.Force)
+	//	if err != nil {
+	//		return nil, err
+	//	}
+	//}
 
 	return resp, nil
 }

@@ -1,10 +1,6 @@
 package engine
 
 import (
-	"fmt"
-	"time"
-
-	withdrawDataStore "github.com/openware/gocryptotrader/database/repository/withdraw"
 	"github.com/openware/gocryptotrader/gctrpc"
 	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
@@ -67,7 +63,7 @@ func (bot *Engine) SubmitWithdrawal(req *withdraw.Request) (*withdraw.Response, 
 				resp.Exchange.ID = ret.ID
 			}
 		}
-		withdrawDataStore.Event(resp)
+		// withdraw event
 	}
 	if err == nil {
 		withdraw.Cache.Add(resp.ID, resp)
@@ -82,27 +78,12 @@ func WithdrawalEventByID(id string) (*withdraw.Response, error) {
 		return v.(*withdraw.Response), nil
 	}
 
-	l, err := withdrawDataStore.GetEventByUUID(id)
-	if err != nil {
-		return nil, fmt.Errorf(ErrWithdrawRequestNotFound, id)
-	}
-	withdraw.Cache.Add(id, l)
-	return l, nil
-}
-
-// WithdrawalEventByExchange returns a withdrawal request by ID
-func WithdrawalEventByExchange(exchange string, limit int) ([]*withdraw.Response, error) {
-	return withdrawDataStore.GetEventsByExchange(exchange, limit)
-}
-
-// WithdrawEventByDate returns a withdrawal request by ID
-func WithdrawEventByDate(exchange string, start, end time.Time, limit int) ([]*withdraw.Response, error) {
-	return withdrawDataStore.GetEventsByDate(exchange, start, end, limit)
-}
-
-// WithdrawalEventByExchangeID returns a withdrawal request by Exchange ID
-func WithdrawalEventByExchangeID(exchange, id string) (*withdraw.Response, error) {
-	return withdrawDataStore.GetEventByExchangeID(exchange, id)
+	//	l, err := withdrawDataStore.GetEventByUUID(id)
+	//	if err != nil {
+	//		return nil, fmt.Errorf(ErrWithdrawRequestNotFound, id)
+	//	}
+	//	withdraw.Cache.Add(id, l)
+	//	return l, nil
 }
 
 func parseMultipleEvents(ret []*withdraw.Response) *gctrpc.WithdrawalEventsByExchangeResponse {

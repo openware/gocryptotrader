@@ -14,7 +14,6 @@ import (
 	"github.com/openware/gocryptotrader/backtester/data/kline"
 	"github.com/openware/gocryptotrader/backtester/data/kline/api"
 	"github.com/openware/gocryptotrader/backtester/data/kline/csv"
-	"github.com/openware/gocryptotrader/backtester/data/kline/database"
 	"github.com/openware/gocryptotrader/backtester/data/kline/live"
 	"github.com/openware/gocryptotrader/backtester/eventhandlers/eventholder"
 	"github.com/openware/gocryptotrader/backtester/eventhandlers/exchange"
@@ -482,95 +481,9 @@ func (bt *BackTest) loadData(cfg *config.Config, exch gctexchange.IBotExchange, 
 				}
 			}()
 		}
-		resp, err = loadDatabaseData(cfg, exch.GetName(), fPair, a, dataType)
-		if err != nil {
-			return nil, fmt.Errorf("unable to retrieve data from GoCryptoTrader database. Error: %v. Please ensure the database is setup correctly and has data before use", err)
-		}
 
-		resp.Item.RemoveDuplicates()
-		resp.Item.SortCandlesByTimestamp(false)
-		resp.Range = gctkline.CalculateCandleDateRanges(
-			cfg.DataSettings.DatabaseData.StartDate,
-			cfg.DataSettings.DatabaseData.EndDate,
-			gctkline.Interval(cfg.DataSettings.Interval),
-			0,
-		)
-		err = resp.Range.VerifyResultsHaveData(resp.Item.Candles)
-		if err != nil {
-			if strings.Contains(err.Error(), "missing candles data between") {
-				log.Warn(log.BackTester, err.Error())
-			} else {
-				return nil, err
-			}
-		}
-	case cfg.DataSettings.APIData != nil:
-		if cfg.DataSettings.APIData.InclusiveEndDate {
-			cfg.DataSettings.APIData.EndDate = cfg.DataSettings.APIData.EndDate.Add(cfg.DataSettings.Interval)
-		}
-		resp, err = loadAPIData(
-			cfg,
-			exch,
-			fPair,
-			a,
-			b.Features.Enabled.Kline.ResultLimit,
-			dataType)
-		if err != nil {
-			return resp, err
-		}
-	case cfg.DataSettings.LiveData != nil:
-		if len(cfg.CurrencySettings) > 1 {
-			return nil, errors.New("live data simulation only supports one currency")
-		}
-		err = loadLiveData(cfg, b)
-		if err != nil {
-			return nil, err
-		}
-		go bt.loadLiveDataLoop(
-			resp,
-			cfg,
-			exch,
-			fPair,
-			a,
-			dataType)
-		return resp, nil
+		return nil, nil
 	}
-	if resp == nil {
-		return nil, fmt.Errorf("processing error, response returned nil")
-	}
-
-	err = b.ValidateKline(fPair, a, resp.Item.Interval)
-	if err != nil {
-		return nil, err
-	}
-
-	err = resp.Load()
-	if err != nil {
-		return nil, err
-	}
-	bt.Reports.AddKlineItem(&resp.Item)
-	return resp, nil
-}
-
-func loadDatabaseData(cfg *config.Config, name string, fPair currency.Pair, a asset.Item, dataType int64) (*kline.DataFromKline, error) {
-	if cfg == nil || cfg.DataSettings.DatabaseData == nil {
-		return nil, errors.New("nil config data received")
-	}
-	err := cfg.ValidateDate()
-	if err != nil {
-		return nil, err
-	}
-	if cfg.DataSettings.Interval <= 0 {
-		return nil, errIntervalUnset
-	}
-
-	return database.LoadData(
-		cfg.DataSettings.DatabaseData.StartDate,
-		cfg.DataSettings.DatabaseData.EndDate,
-		cfg.DataSettings.Interval,
-		strings.ToLower(name),
-		dataType,
-		fPair,
-		a)
 }
 
 func loadAPIData(cfg *config.Config, exch gctexchange.IBotExchange, fPair currency.Pair, a asset.Item, resultLimit uint32, dataType int64) (*kline.DataFromKline, error) {

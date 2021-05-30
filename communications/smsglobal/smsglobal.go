@@ -10,8 +10,8 @@ import (
 
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/communications/base"
-	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/config"
+	"github.com/openware/gocryptotrader/log"
 )
 
 const (

@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/gocryptotrader/portfolio/banking"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
-	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/currency"
 )
 

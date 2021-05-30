@@ -15,17 +15,17 @@ import (
 	"strings"
 	"time"
 
+	"github.com/openware/gocryptotrader/database"
+	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
+	"github.com/openware/irix/portfolio/banking"
+	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/common"
 	"github.com/openware/pkg/common/convert"
 	"github.com/openware/pkg/common/file"
 	"github.com/openware/pkg/connchecker"
 	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/currency/forexprovider"
-	"github.com/openware/gocryptotrader/database"
-	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
 	"github.com/openware/pkg/log"
-	"github.com/openware/pkg/asset"
-	"github.com/openware/irix/portfolio/banking"
 )
 
 // GetCurrencyConfig returns currency configurations

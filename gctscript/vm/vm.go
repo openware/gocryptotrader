@@ -14,7 +14,6 @@ import (
 	"github.com/gofrs/uuid"
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/common/crypto"
-	scriptevent "github.com/openware/gocryptotrader/database/repository/script"
 	"github.com/openware/gocryptotrader/gctscript/modules/loader"
 	"github.com/openware/gocryptotrader/gctscript/wrappers/validator"
 	"github.com/openware/gocryptotrader/log"
@@ -253,7 +252,6 @@ func (vm *VM) event(status, executionType string) {
 		}
 		data.SetValid(scriptData)
 	}
-	scriptevent.Event(vm.getHash(), vm.ShortName(), vm.Path, data, executionType, status, time.Now())
 }
 
 func (vm *VM) scriptData() ([]byte, error) {

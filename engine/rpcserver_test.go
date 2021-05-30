@@ -11,17 +11,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gofrs/uuid"
 	"github.com/openware/gocryptotrader/common"
+	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/gocryptotrader/database"
 	"github.com/openware/gocryptotrader/database/drivers"
-	"github.com/openware/gocryptotrader/database/repository"
-	dbexchange "github.com/openware/gocryptotrader/database/repository/exchange"
-	sqltrade "github.com/openware/gocryptotrader/database/repository/trade"
 	"github.com/openware/gocryptotrader/gctrpc"
 	exchange "github.com/openware/irix"
 	"github.com/openware/irix/binance"
-	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/currency"
 	"github.com/openware/pkg/kline"
@@ -71,11 +67,6 @@ func RPCTestSetup(t *testing.T) *Engine {
 	if err != nil {
 		t.Fatalf("failed to run migrations %v", err)
 	}
-	uuider, _ := uuid.NewV4()
-	err = dbexchange.Insert(dbexchange.Details{Name: testExchange, UUID: uuider})
-	if err != nil {
-		t.Fatalf("failed to insert exchange %v", err)
-	}
 	database.DB.Mu.Unlock()
 
 	return engerino
@@ -92,236 +83,6 @@ func CleanRPCTest(t *testing.T, engerino *Engine) {
 	err = os.Remove(filepath.Join(common.GetDefaultDataDir(runtime.GOOS), databaseFolder, databaseName))
 	if err != nil {
 		t.Error(err)
-	}
-}
-
-func TestGetSavedTrades(t *testing.T) {
-	engerino := RPCTestSetup(t)
-	defer CleanRPCTest(t, engerino)
-	s := RPCServer{Engine: engerino}
-	_, err := s.GetSavedTrades(context.Background(), &gctrpc.GetSavedTradesRequest{})
-	if err == nil {
-		t.Fatal(unexpectedLackOfError)
-	}
-	if !errors.Is(err, errInvalidArguments) {
-		t.Error(err)
-	}
-	_, err = s.GetSavedTrades(context.Background(), &gctrpc.GetSavedTradesRequest{
-		Exchange: "fake",
-		Pair: &gctrpc.CurrencyPair{
-			Delimiter: currency.DashDelimiter,
-			Base:      currency.BTC.String(),
-			Quote:     currency.USD.String(),
-		},
-		AssetType: asset.Spot.String(),
-		Start:     time.Date(2020, 0, 0, 0, 0, 0, 0, time.UTC).Format(common.SimpleTimeFormat),
-		End:       time.Date(2020, 1, 1, 1, 1, 1, 1, time.UTC).Format(common.SimpleTimeFormat),
-	})
-	if err == nil {
-		t.Error(unexpectedLackOfError)
-		return
-	}
-	if !errors.Is(err, errExchangeNotLoaded) {
-		t.Error(err)
-	}
-	_, err = s.GetSavedTrades(context.Background(), &gctrpc.GetSavedTradesRequest{
-		Exchange: testExchange,
-		Pair: &gctrpc.CurrencyPair{
-			Delimiter: currency.DashDelimiter,
-			Base:      currency.BTC.String(),
-			Quote:     currency.USD.String(),
-		},
-		AssetType: asset.Spot.String(),
-		Start:     time.Date(2020, 0, 0, 0, 0, 0, 0, time.UTC).Format(common.SimpleTimeFormat),
-		End:       time.Date(2020, 1, 1, 1, 1, 1, 1, time.UTC).Format(common.SimpleTimeFormat),
-	})
-	if err == nil {
-		t.Error(unexpectedLackOfError)
-		return
-	}
-	if err.Error() != "request for Bitstamp spot trade data between 2019-11-30 00:00:00 and 2020-01-01 01:01:01 and returned no results" {
-		t.Error(err)
-	}
-	err = sqltrade.Insert(sqltrade.Data{
-		Timestamp: time.Date(2020, 0, 0, 0, 0, 1, 0, time.UTC),
-		Exchange:  testExchange,
-		Base:      currency.BTC.String(),
-		Quote:     currency.USD.String(),
-		AssetType: asset.Spot.String(),
-		Price:     1337,
-		Amount:    1337,
-		Side:      order.Buy.String(),
-	})
-	if err != nil {
-		t.Error(err)
-		return
-	}
-	_, err = s.GetSavedTrades(context.Background(), &gctrpc.GetSavedTradesRequest{
-		Exchange: testExchange,
-		Pair: &gctrpc.CurrencyPair{
-			Delimiter: currency.DashDelimiter,
-			Base:      currency.BTC.String(),
-			Quote:     currency.USD.String(),
-		},
-		AssetType: asset.Spot.String(),
-		Start:     time.Date(2020, 0, 0, 0, 0, 0, 0, time.UTC).Format(common.SimpleTimeFormat),
-		End:       time.Date(2020, 1, 1, 1, 1, 1, 1, time.UTC).Format(common.SimpleTimeFormat),
-	})
-	if err != nil {
-		t.Error(err)
-	}
-}
-
-func TestConvertTradesToCandles(t *testing.T) {
-	engerino := RPCTestSetup(t)
-	defer CleanRPCTest(t, engerino)
-	s := RPCServer{Engine: engerino}
-	// bad param test
-	_, err := s.ConvertTradesToCandles(context.Background(), &gctrpc.ConvertTradesToCandlesRequest{})
-	if err == nil {
-		t.Error(unexpectedLackOfError)
-		return
-	}
-	if !errors.Is(err, errInvalidArguments) {
-		t.Error(err)
-	}
-
-	// bad exchange test
-	_, err = s.ConvertTradesToCandles(context.Background(), &gctrpc.ConvertTradesToCandlesRequest{
-		Exchange: "faker",
-		Pair: &gctrpc.CurrencyPair{
-			Delimiter: currency.DashDelimiter,
-			Base:      currency.BTC.String(),
-			Quote:     currency.USD.String(),
-		},
-		AssetType:    asset.Spot.String(),
-		Start:        time.Date(2020, 0, 0, 0, 0, 0, 0, time.UTC).Format(common.SimpleTimeFormat),
-		End:          time.Date(2020, 1, 1, 1, 1, 1, 1, time.UTC).Format(common.SimpleTimeFormat),
-		TimeInterval: int64(kline.OneHour.Duration()),
-	})
-	if err == nil {
-		t.Error(unexpectedLackOfError)
-		return
-	}
-	if !errors.Is(err, errExchangeNotLoaded) {
-		t.Error(err)
-	}
-
-	// no trades test
-	_, err = s.ConvertTradesToCandles(context.Background(), &gctrpc.ConvertTradesToCandlesRequest{
-		Exchange: testExchange,
-		Pair: &gctrpc.CurrencyPair{
-			Delimiter: currency.DashDelimiter,
-			Base:      currency.BTC.String(),
-			Quote:     currency.USD.String(),
-		},
-		AssetType:    asset.Spot.String(),
-		Start:        time.Date(2020, 1, 1, 1, 1, 1, 1, time.UTC).Format(common.SimpleTimeFormat),
-		End:          time.Date(2020, 2, 2, 2, 2, 2, 2, time.UTC).Format(common.SimpleTimeFormat),
-		TimeInterval: int64(kline.OneHour.Duration()),
-	})
-	if err == nil {
-		t.Error(unexpectedLackOfError)
-		return
-	}
-	if err.Error() != "no trades returned from supplied params" {
-		t.Error(err)
-	}
-
-	// add a trade
-	err = sqltrade.Insert(sqltrade.Data{
-		Timestamp: time.Date(2020, 1, 1, 1, 1, 2, 1, time.UTC),
-		Exchange:  testExchange,
-		Base:      currency.BTC.String(),
-		Quote:     currency.USD.String(),
-		AssetType: asset.Spot.String(),
-		Price:     1337,
-		Amount:    1337,
-		Side:      order.Buy.String(),
-	})
-	if err != nil {
-		t.Error(err)
-		return
-	}
-
-	// get candle from one trade
-	var candles *gctrpc.GetHistoricCandlesResponse
-	candles, err = s.ConvertTradesToCandles(context.Background(), &gctrpc.ConvertTradesToCandlesRequest{
-		Exchange: testExchange,
-		Pair: &gctrpc.CurrencyPair{
-			Delimiter: currency.DashDelimiter,
-			Base:      currency.BTC.String(),
-			Quote:     currency.USD.String(),
-		},
-		AssetType:    asset.Spot.String(),
-		Start:        time.Date(2020, 1, 1, 1, 0, 0, 0, time.UTC).Format(common.SimpleTimeFormat),
-		End:          time.Date(2020, 2, 2, 2, 2, 2, 2, time.UTC).Format(common.SimpleTimeFormat),
-		TimeInterval: int64(kline.OneHour.Duration()),
-	})
-	if err != nil {
-		t.Error(err)
-	}
-	if len(candles.Candle) == 0 {
-		t.Error("no candles returned")
-	}
-
-	// save generated candle to database
-	_, err = s.ConvertTradesToCandles(context.Background(), &gctrpc.ConvertTradesToCandlesRequest{
-		Exchange: testExchange,
-		Pair: &gctrpc.CurrencyPair{
-			Delimiter: currency.DashDelimiter,
-			Base:      currency.BTC.String(),
-			Quote:     currency.USD.String(),
-		},
-		AssetType:    asset.Spot.String(),
-		Start:        time.Date(2020, 1, 1, 1, 1, 1, 1, time.UTC).Format(common.SimpleTimeFormat),
-		End:          time.Date(2020, 2, 2, 2, 2, 2, 2, time.UTC).Format(common.SimpleTimeFormat),
-		TimeInterval: int64(kline.OneHour.Duration()),
-		Sync:         true,
-	})
-	if err != nil {
-		t.Error(err)
-	}
-
-	// forcefully remove previous candle and insert a new one
-	_, err = s.ConvertTradesToCandles(context.Background(), &gctrpc.ConvertTradesToCandlesRequest{
-		Exchange: testExchange,
-		Pair: &gctrpc.CurrencyPair{
-			Delimiter: currency.DashDelimiter,
-			Base:      currency.BTC.String(),
-			Quote:     currency.USD.String(),
-		},
-		AssetType:    asset.Spot.String(),
-		Start:        time.Date(2020, 1, 1, 1, 1, 1, 1, time.UTC).Format(common.SimpleTimeFormat),
-		End:          time.Date(2020, 2, 2, 2, 2, 2, 2, time.UTC).Format(common.SimpleTimeFormat),
-		TimeInterval: int64(kline.OneHour.Duration()),
-		Sync:         true,
-		Force:        true,
-	})
-	if err != nil {
-		t.Error(err)
-	}
-
-	// load the saved candle to verify that it was overwritten
-	candles, err = s.GetHistoricCandles(context.Background(), &gctrpc.GetHistoricCandlesRequest{
-		Exchange: testExchange,
-		Pair: &gctrpc.CurrencyPair{
-			Delimiter: currency.DashDelimiter,
-			Base:      currency.BTC.String(),
-			Quote:     currency.USD.String(),
-		},
-		AssetType:    asset.Spot.String(),
-		Start:        time.Date(2020, 1, 1, 1, 0, 0, 0, time.UTC).Format(common.SimpleTimeFormat),
-		End:          time.Date(2020, 2, 2, 2, 2, 0, 0, time.UTC).Format(common.SimpleTimeFormat),
-		TimeInterval: int64(kline.OneHour.Duration()),
-		UseDb:        true,
-	})
-	if err != nil {
-		t.Error(err)
-	}
-
-	if len(candles.Candle) != 1 {
-		t.Error("expected only one candle")
 	}
 }
 

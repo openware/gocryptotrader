@@ -4,12 +4,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/openware/irix/protocol"
+	"github.com/openware/gocryptotrader/database"
 	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
 	"github.com/openware/irix/portfolio"
 	"github.com/openware/irix/portfolio/banking"
+	"github.com/openware/irix/protocol"
 	"github.com/openware/pkg/currency"
-	"github.com/openware/gocryptotrader/database"
 	"github.com/openware/pkg/log"
 )
 

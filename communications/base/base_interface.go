@@ -4,8 +4,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/openware/gocryptotrader/log"
 	"github.com/openware/gocryptotrader/config"
+	"github.com/openware/gocryptotrader/log"
 )
 
 // IComm is the main interface array across the communication packages

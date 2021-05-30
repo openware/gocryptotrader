@@ -6,8 +6,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/openware/gocryptotrader/core"
 	"github.com/openware/gocryptotrader/config"
+	"github.com/openware/gocryptotrader/core"
 	"github.com/pquerna/otp/totp"
 )
 
