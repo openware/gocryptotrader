@@ -75,22 +75,22 @@ var (
 // prestart management of Portfolio, Communications, Webserver and Enabled
 // Exchanges
 type Config struct {
-	Name              string                  `json:"name"`
-	DataDirectory     string                  `json:"dataDirectory"`
-	EncryptConfig     int                     `json:"encryptConfig"`
-	GlobalHTTPTimeout time.Duration           `json:"globalHTTPTimeout"`
-	Database          database.Config         `json:"database"`
-	Logging           log.Config              `json:"logging"`
-	ConnectionMonitor ConnectionMonitorConfig `json:"connectionMonitor"`
-	Profiler          Profiler                `json:"profiler"`
-	NTPClient         NTPClientConfig         `json:"ntpclient"`
-	GCTScript         gctscript.Config        `json:"gctscript"`
-	Currency          CurrencyConfig          `json:"currencyConfig"`
-	Communications    CommunicationsConfig    `json:"communications"`
-	RemoteControl     RemoteControlConfig     `json:"remoteControl"`
-	Portfolio         portfolio.Base          `json:"portfolioAddresses"`
-	Exchanges         []irixCfg.ExchangeConfig        `json:"exchanges"`
-	BankAccounts      []banking.Account       `json:"bankAccounts"`
+	Name              string                   `json:"name"`
+	DataDirectory     string                   `json:"dataDirectory"`
+	EncryptConfig     int                      `json:"encryptConfig"`
+	GlobalHTTPTimeout time.Duration            `json:"globalHTTPTimeout"`
+	Database          database.Config          `json:"database"`
+	Logging           log.Config               `json:"logging"`
+	ConnectionMonitor ConnectionMonitorConfig  `json:"connectionMonitor"`
+	Profiler          Profiler                 `json:"profiler"`
+	NTPClient         NTPClientConfig          `json:"ntpclient"`
+	GCTScript         gctscript.Config         `json:"gctscript"`
+	Currency          CurrencyConfig           `json:"currencyConfig"`
+	Communications    CommunicationsConfig     `json:"communications"`
+	RemoteControl     RemoteControlConfig      `json:"remoteControl"`
+	Portfolio         portfolio.Base           `json:"portfolioAddresses"`
+	Exchanges         []irixCfg.ExchangeConfig `json:"exchanges"`
+	BankAccounts      []banking.Account        `json:"bankAccounts"`
 
 	// Deprecated config settings, will be removed at a future date
 	Webserver           *WebserverConfig          `json:"webserver,omitempty"`

@@ -2,8 +2,8 @@ package main
 
 import (
 	"encoding/json"
+	irixCfg "github.com/openware/irix/config"
 
-	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/currency"
 )
@@ -32,7 +32,7 @@ type Config struct {
 	OrderSubmission OrderSubmission                         `json:"orderSubmission"`
 	WalletAddress   string                                  `json:"withdrawWalletAddress"`
 	BankDetails     Bank                                    `json:"bankAccount"`
-	Exchanges       map[string]*config.APICredentialsConfig `json:"exchanges"`
+	Exchanges       map[string]*irixCfg.APICredentialsConfig `json:"exchanges"`
 }
 
 // Key is the format for wrapperconfig.json to store API credentials

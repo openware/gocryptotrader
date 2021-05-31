@@ -2,11 +2,11 @@ package engine
 
 import (
 	"errors"
+	irixCfg "github.com/openware/irix/config"
 	"strings"
 	"sync"
 
 	"github.com/openware/gocryptotrader/common"
-	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/gocryptotrader/log"
 	exchange "github.com/openware/irix"
 	"github.com/openware/irix/binance"
@@ -383,7 +383,7 @@ func (bot *Engine) SetupExchanges() error {
 		}
 		wg.Add(1)
 		cfg := configs[x]
-		go func(currCfg config.ExchangeConfig) {
+		go func(currCfg irixCfg.ExchangeConfig) {
 			defer wg.Done()
 			err := bot.LoadExchange(currCfg.Name, true, &wg)
 			if err != nil {

@@ -1,10 +1,10 @@
 package engine
 
 import (
+	irixCfg "github.com/openware/irix/config"
 	"sync"
 	"time"
 
-	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/gocryptotrader/portfolio/withdraw"
 	exchange "github.com/openware/irix"
 	"github.com/openware/irix/stream"
@@ -37,7 +37,7 @@ func addPassingFakeExchange(baseExchangeName string, bot *Engine) error {
 	}
 
 	base := testExch.GetBase()
-	bot.Config.Exchanges = append(bot.Config.Exchanges, config.ExchangeConfig{
+	bot.Config.Exchanges = append(bot.Config.Exchanges, irixCfg.ExchangeConfig{
 		Name:    fakePassExchange,
 		Enabled: true,
 		Verbose: false,
@@ -74,7 +74,7 @@ func addPassingFakeExchange(baseExchangeName string, bot *Engine) error {
 	return nil
 }
 
-func (h *FakePassingExchange) Setup(_ *config.ExchangeConfig) error   { return nil }
+func (h *FakePassingExchange) Setup(_ *irixCfg.ExchangeConfig) error   { return nil }
 func (h *FakePassingExchange) Start(_ *sync.WaitGroup)                {}
 func (h *FakePassingExchange) SetDefaults()                           {}
 func (h *FakePassingExchange) GetName() string                        { return fakePassExchange }
@@ -229,7 +229,7 @@ func (h *FakePassingExchange) AuthenticateWebsocket() error { return nil }
 func (h *FakePassingExchange) GetSubscriptions() ([]stream.ChannelSubscription, error) {
 	return nil, nil
 }
-func (h *FakePassingExchange) GetDefaultConfig() (*config.ExchangeConfig, error) { return nil, nil }
+func (h *FakePassingExchange) GetDefaultConfig() (*irixCfg.ExchangeConfig, error) { return nil, nil }
 func (h *FakePassingExchange) SupportsAsset(_ asset.Item) bool                   { return true }
 func (h *FakePassingExchange) GetHistoricCandles(_ currency.Pair, _ asset.Item, _, _ time.Time, _ kline.Interval) (kline.Item, error) {
 	return kline.Item{}, nil

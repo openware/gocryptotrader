@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	irixCfg "github.com/openware/irix/config"
 	"io"
 	"io/ioutil"
 	"os"
@@ -18,6 +17,7 @@ import (
 
 	"github.com/openware/gocryptotrader/database"
 	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
+	irixCfg "github.com/openware/irix/config"
 	"github.com/openware/irix/portfolio/banking"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/common"

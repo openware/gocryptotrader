@@ -13,7 +13,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.4.0
 	github.com/lib/pq v1.10.2
 	github.com/mattn/go-sqlite3 v1.14.7
-	github.com/openware/irix v0.0.0-20210530232945-81ab215e69dc
+	github.com/openware/irix v0.0.0-20210531002509-0418289af7b9
 	github.com/openware/pkg v0.0.0-20210528154413-404a657867b9
 	github.com/pquerna/otp v1.3.0
 	github.com/thrasher-corp/gct-ta v0.0.0-20200623072738-f2b55b7f9f41

@@ -1,7 +1,6 @@
 package config
 
 import (
-	irixCfg "github.com/openware/irix/config"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -11,6 +10,7 @@ import (
 
 	"github.com/openware/gocryptotrader/database"
 	gctscript "github.com/openware/gocryptotrader/gctscript/vm"
+	irixCfg "github.com/openware/irix/config"
 	"github.com/openware/irix/portfolio/banking"
 	"github.com/openware/pkg/asset"
 	"github.com/openware/pkg/common"

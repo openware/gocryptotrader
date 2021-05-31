@@ -11,9 +11,12 @@ import (
 	"path/filepath"
 	"strings"
 
+	irixCfg "github.com/openware/irix/config"
+
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/gocryptotrader/core"
+	irixCfg "github.com/openware/irix/config"
 	"github.com/openware/pkg/currency"
 )
 
@@ -93,7 +96,7 @@ func main() {
 	exchangeDirectory := filepath.Join(targetPath, exch.Name)
 	configTestFile := config.GetConfig()
 
-	var newConfig *config.ExchangeConfig
+	var newConfig *irixCfg.ExchangeConfig
 	newConfig, err = makeExchange(exchangeDirectory, configTestFile, &exch)
 	if err != nil {
 		log.Fatal(err)
@@ -122,7 +125,7 @@ func checkExchangeName(exchName string) error {
 	return nil
 }
 
-func makeExchange(exchangeDirectory string, configTestFile *config.Config, exch *exchange) (*config.ExchangeConfig, error) {
+func makeExchange(exchangeDirectory string, configTestFile *config.Config, exch *exchange) (*irixCfg.ExchangeConfig, error) {
 	err := configTestFile.LoadConfig(exchangeConfigPath, true)
 	if err != nil {
 		return nil, err
@@ -147,7 +150,7 @@ func makeExchange(exchangeDirectory string, configTestFile *config.Config, exch 
 
 	exch.CapitalName = strings.Title(exch.Name)
 	exch.Variable = exch.Name[0:2]
-	newExchConfig := &config.ExchangeConfig{}
+	newExchConfig := &irixCfg.ExchangeConfig{}
 	newExchConfig.Name = exch.CapitalName
 	newExchConfig.Enabled = true
 	newExchConfig.API.Credentials.Key = "Key"
@@ -229,7 +232,7 @@ func makeExchange(exchangeDirectory string, configTestFile *config.Config, exch 
 	return newExchConfig, nil
 }
 
-func saveConfig(exchangeDirectory string, configTestFile *config.Config, newExchConfig *config.ExchangeConfig) error {
+func saveConfig(exchangeDirectory string, configTestFile *config.Config, newExchConfig *irixCfg.ExchangeConfig) error {
 	cmd := exec.Command("go", "fmt")
 	cmd.Dir = exchangeDirectory
 	out, err := cmd.Output()

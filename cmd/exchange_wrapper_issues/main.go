@@ -5,6 +5,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	irixCfg "github.com/openware/irix/config"
 	"io/ioutil"
 	"log"
 	"os"
@@ -52,7 +53,7 @@ func main() {
 	if err != nil {
 		log.Printf("Error loading config: '%v', generating empty config", err)
 		wrapperConfig = Config{
-			Exchanges: make(map[string]*config.APICredentialsConfig),
+			Exchanges: make(map[string]*irixCfg.APICredentialsConfig),
 		}
 	}
 
@@ -62,7 +63,7 @@ func main() {
 	for x := range exchange.Exchanges {
 		name := exchange.Exchanges[x]
 		if _, ok := wrapperConfig.Exchanges[name]; !ok {
-			wrapperConfig.Exchanges[strings.ToLower(name)] = &config.APICredentialsConfig{}
+			wrapperConfig.Exchanges[strings.ToLower(name)] = &irixCfg.APICredentialsConfig{}
 		}
 		if shouldLoadExchange(name) {
 			err = bot.LoadExchange(name, true, &wg)
@@ -196,7 +197,7 @@ func shouldLoadExchange(name string) bool {
 	return shouldLoadExchange
 }
 
-func setExchangeAPIKeys(name string, keys map[string]*config.APICredentialsConfig, base *exchange.Base) bool {
+func setExchangeAPIKeys(name string, keys map[string]*irixCfg.APICredentialsConfig, base *exchange.Base) bool {
 	lowerExchangeName := strings.ToLower(name)
 
 	if base.API.CredentialsValidator.RequiresKey && keys[lowerExchangeName].Key == "" {
