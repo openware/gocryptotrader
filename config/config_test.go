@@ -1,6 +1,7 @@
 package config
 
 import (
+	irixCfg "github.com/openware/irix/config"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -228,18 +229,18 @@ func TestCheckClientBankAccounts(t *testing.T) {
 func TestPurgeExchangeCredentials(t *testing.T) {
 	t.Parallel()
 	var c Config
-	c.Exchanges = []ExchangeConfig{
+	c.Exchanges = []irixCfg.ExchangeConfig{
 		{
 			Name: testString,
-			API: APIConfig{
+			API: irixCfg.APIConfig{
 				AuthenticatedSupport:          true,
 				AuthenticatedWebsocketSupport: true,
-				CredentialsValidator: &APICredentialsValidatorConfig{
+				CredentialsValidator: &irixCfg.APICredentialsValidatorConfig{
 					RequiresKey:      true,
 					RequiresSecret:   true,
 					RequiresClientID: true,
 				},
-				Credentials: APICredentialsConfig{
+				Credentials: irixCfg.APICredentialsConfig{
 					Key:       "asdf123",
 					Secret:    "secretp4ssw0rd",
 					ClientID:  "1337",
@@ -250,11 +251,11 @@ func TestPurgeExchangeCredentials(t *testing.T) {
 		},
 		{
 			Name: "test123",
-			API: APIConfig{
-				CredentialsValidator: &APICredentialsValidatorConfig{
+			API: irixCfg.APIConfig{
+				CredentialsValidator: &irixCfg.APICredentialsValidatorConfig{
 					RequiresKey: true,
 				},
-				Credentials: APICredentialsConfig{
+				Credentials: irixCfg.APICredentialsConfig{
 					Key:    "asdf",
 					Secret: DefaultAPISecret,
 				},
@@ -431,7 +432,7 @@ func TestGetExchangeAssetTypes(t *testing.T) {
 	}
 
 	c.Exchanges = append(c.Exchanges,
-		ExchangeConfig{
+		irixCfg.ExchangeConfig{
 			Name: testFakeExchangeName,
 			CurrencyPairs: &currency.PairsManager{
 				Pairs: map[asset.Item]*currency.PairStore{
@@ -468,7 +469,7 @@ func TestSupportsExchangeAssetType(t *testing.T) {
 	}
 
 	c.Exchanges = append(c.Exchanges,
-		ExchangeConfig{
+		irixCfg.ExchangeConfig{
 			Name: testFakeExchangeName,
 			CurrencyPairs: &currency.PairsManager{
 				Pairs: map[asset.Item]*currency.PairStore{
@@ -515,7 +516,7 @@ func TestSetPairs(t *testing.T) {
 	}
 
 	c.Exchanges = append(c.Exchanges,
-		ExchangeConfig{
+		irixCfg.ExchangeConfig{
 			Name: testFakeExchangeName,
 		},
 	)
@@ -552,7 +553,7 @@ func TestGetCurrencyPairConfig(t *testing.T) {
 	}
 
 	c.Exchanges = append(c.Exchanges,
-		ExchangeConfig{
+		irixCfg.ExchangeConfig{
 			Name: testFakeExchangeName,
 		},
 	)
@@ -605,7 +606,7 @@ func TestCheckPairConfigFormats(t *testing.T) {
 
 	// Test nil pair store
 	c.Exchanges = append(c.Exchanges,
-		ExchangeConfig{
+		irixCfg.ExchangeConfig{
 			Name: testFakeExchangeName,
 		},
 	)
@@ -705,7 +706,7 @@ func TestCheckPairConsistency(t *testing.T) {
 	}
 
 	c.Exchanges = append(c.Exchanges,
-		ExchangeConfig{
+		irixCfg.ExchangeConfig{
 			Name: testFakeExchangeName,
 		},
 	)
@@ -885,7 +886,7 @@ func TestGetPairFormat(t *testing.T) {
 	}
 
 	c.Exchanges = append(c.Exchanges,
-		ExchangeConfig{
+		irixCfg.ExchangeConfig{
 			Name: testFakeExchangeName,
 		},
 	)
@@ -983,7 +984,7 @@ func TestGetAvailablePairs(t *testing.T) {
 	}
 
 	c.Exchanges = append(c.Exchanges,
-		ExchangeConfig{
+		irixCfg.ExchangeConfig{
 			Name:          testFakeExchangeName,
 			CurrencyPairs: &currency.PairsManager{},
 		},
@@ -1026,7 +1027,7 @@ func TestGetEnabledPairs(t *testing.T) {
 	}
 
 	c.Exchanges = append(c.Exchanges,
-		ExchangeConfig{
+		irixCfg.ExchangeConfig{
 			Name:          testFakeExchangeName,
 			CurrencyPairs: &currency.PairsManager{},
 		},
@@ -1241,7 +1242,7 @@ func TestUpdateExchangeConfig(t *testing.T) {
 		t.Error(err)
 	}
 
-	e := &ExchangeConfig{}
+	e := &irixCfg.ExchangeConfig{}
 	err = c.UpdateExchangeConfig(e)
 	if err == nil {
 		t.Error("Expected error from non-existent exchange")
@@ -1472,7 +1473,7 @@ func TestCheckExchangeConfigValues(t *testing.T) {
 			cfg.Exchanges[0].Name)
 	}
 
-	v := &APICredentialsValidatorConfig{
+	v := &irixCfg.APICredentialsValidatorConfig{
 		RequiresKey:    true,
 		RequiresSecret: true,
 	}
@@ -2049,7 +2050,7 @@ func TestRemoveExchange(t *testing.T) {
 	t.Parallel()
 	var c Config
 	const testExchangeName = "0xBAAAAAAD"
-	c.Exchanges = append(c.Exchanges, ExchangeConfig{
+	c.Exchanges = append(c.Exchanges, irixCfg.ExchangeConfig{
 		Name: testExchangeName,
 	})
 	_, err := c.GetExchangeConfig(testExchangeName)
