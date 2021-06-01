@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"github.com/thrasher-corp/gocryptotrader/currency"
+	cfx "github.com/openware/irix/config"
 	"github.com/thrasher-corp/gocryptotrader/database"
 	"github.com/thrasher-corp/gocryptotrader/exchanges/protocol"
 	gctscript "github.com/thrasher-corp/gocryptotrader/gctscript/vm"
@@ -89,7 +90,7 @@ type Config struct {
 	Communications    CommunicationsConfig    `json:"communications"`
 	RemoteControl     RemoteControlConfig     `json:"remoteControl"`
 	Portfolio         portfolio.Base          `json:"portfolioAddresses"`
-	Exchanges         []ExchangeConfig        `json:"exchanges"`
+	Exchanges         []cfx.ExchangeConfig        `json:"exchanges"`
 	BankAccounts      []banking.Account       `json:"bankAccounts"`
 
 	// Deprecated config settings, will be removed at a future date
@@ -111,6 +112,7 @@ type ConnectionMonitorConfig struct {
 	CheckInterval    time.Duration `json:"checkInterval"`
 }
 
+//TODO: Move to IRIX
 // ExchangeConfig holds all the information needed for each enabled Exchange.
 type ExchangeConfig struct {
 	Name                          string                 `json:"name"`
