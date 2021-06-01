@@ -16,7 +16,6 @@ import (
 	"github.com/openware/gocryptotrader/common"
 	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/gocryptotrader/core"
-	irixCfg "github.com/openware/irix/config"
 	"github.com/openware/pkg/currency"
 )
 
