@@ -252,6 +252,8 @@ github.com/onsi/gomega v1.11.0/go.mod h1:azGKhqFUon9Vuj0YmTfLSmx0FUwqXYSTl5re8lQ
 github.com/opentracing/opentracing-go v1.1.0/go.mod h1:UkNAQd3GIcIGf0SeVgPpRdFStlNbqXla1AfSYxPUl2o=
 github.com/openware/irix v0.0.0-20210530232945-81ab215e69dc h1:LSudP+4EypHAV5nCpIY0bMbIyxUd4IZqjylp2LhPnN8=
 github.com/openware/irix v0.0.0-20210530232945-81ab215e69dc/go.mod h1:RL7XO9X4abHm4k3FYPINPa8WpRvbncg1h+tHCcjuk3w=
+github.com/openware/irix v0.0.0-20210531002509-0418289af7b9 h1:RddjETO8A4pKf7DU3QrOTiGhjgNCeEzLtNxtYkGOMRo=
+github.com/openware/irix v0.0.0-20210531002509-0418289af7b9/go.mod h1:m36PwNruY89GjbOKeJbn2CIzPSGMl7Ox8n9Yy74GQgU=
 github.com/openware/pkg v0.0.0-20210528154413-404a657867b9 h1:3xDdbbzvyhSaeLhpRuyMybqe33aYmn1Qf3mgZeWSvTk=
 github.com/openware/pkg v0.0.0-20210528154413-404a657867b9/go.mod h1:V1QiZlu4NELuVZuwFr/jfiVdG0kAM1/CGoXTGGZ82jU=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=

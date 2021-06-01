@@ -2,10 +2,10 @@ package main
 
 import (
 	"encoding/json"
+	irixCfg "github.com/openware/irix/config"
 	"log"
 	"sync"
 
-	"github.com/openware/gocryptotrader/config"
 	"github.com/openware/gocryptotrader/engine"
 	exchange "github.com/openware/irix"
 )
@@ -30,10 +30,10 @@ func main() {
 	wg.Wait()
 	log.Println("Done.")
 
-	var cfgs []config.ExchangeConfig
+	var cfgs []irixCfg.ExchangeConfig
 	exchanges := engine.Bot.GetExchanges()
 	for x := range exchanges {
-		var cfg *config.ExchangeConfig
+		var cfg *irixCfg.ExchangeConfig
 		cfg, err = exchanges[x].GetDefaultConfig()
 		if err != nil {
 			log.Printf("Failed to get exchanges default config. Err: %s", err)
