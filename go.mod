@@ -6,7 +6,7 @@ require (
 	github.com/d5/tengo/v2 v2.7.0
 	github.com/friendsofgo/errors v0.9.2 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
-	github.com/gofrs/uuid v4.0.0+incompatible
+	github.com/gofrs/uuid v4.3.0+incompatible
 	github.com/golang/protobuf v1.5.2
 	github.com/google/go-querystring v1.1.0
 	github.com/gorilla/mux v1.8.0
